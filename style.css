@@ -110,8 +110,8 @@ p {
     letter-spacing: 8vw;
     text-align: center;
     line-height: 6rem;
+
     transform: translate(3.3vw, -4rem);
-    /*border: 1px solid red*/
 }
 
 .fading-dot {
@@ -129,14 +129,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
-    /*border: 1px solid red*/
-
 }
 
 .card {
     width: 175px;
-    /*border: 1px solid red;*/
-
     transition: all 0.3s;
 }
 
@@ -204,7 +200,7 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     main {margin: 0 20vw 200px;}
 
     .card-holder {gap: 3vw;}
@@ -216,7 +212,7 @@ body::-webkit-scrollbar {
     .socials {gap: 3vw;}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     main {margin: 0 7vw 200px;}
 
     nav {display: none;}
