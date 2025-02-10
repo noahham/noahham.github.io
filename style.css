@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "London-Underground";
+    src: url("assets/london-underground-regular.ttf");
+}
+
+/* DEFAULT ELEMENTS */
+body {
+    background-color: #0F0F0F;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    gap: 65px;
+
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+    padding-left: 2rem;
+
+    background-image: linear-gradient(rgba(15, 15, 15, 1.0), rgba(15, 15, 15, 0.0));
+}
+
+main {
+    margin: 0 31.25vw 200px;
+    padding-top: 30vh
+}
+
+h1 {
+    font-family: "London-Underground", "serif";
+    font-size: 1rem;
+
+    color: #4B4B4B;
+
+    padding-top: 300px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-family: "Inter", "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: "London-Underground", "serif";
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+}
+
+a {
+    font-family: "Inter", "sans-serif";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #999999;
+    text-decoration: none;
+
+}
+
+p {
+    font-family: "Inter", "sans-serif";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #DDDDDD;
+}
+
+/* CLASSES */
+
+/* General */
+
+.section-head {
+    letter-spacing: 3vw;
+    transition: all 0.7s;
+}
+
+.section:hover .section-head {
+    letter-spacing: 4.75vw;
+}
+
+/* Nav Section */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    opacity: 25%;
+
+    transition: all 0.3s
+}
+
+.nav-link:hover {opacity: 100%}
+
+.nav-link.active {opacity: 100%}
+
+/* Hero Section */
+.hero-title {
+    padding: 0;
+
+    margin: 0 auto;
+
+    text-align: left;
+    color: white;
+    letter-spacing: 7vw;
+    line-height: 10rem;
+}
+
+.dot {
+    color: #0F0F0F;
+    letter-spacing: 8vw;
+    text-align: center;
+    line-height: 6rem;
+    transform: translate(3.3vw, -4rem);
+    /*border: 1px solid red*/
+}
+
+.fading-dot {
+    padding: 0;
+    margin: 0 1vw 0 0;
+
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 10rem;
+}
+
+/* Projects Section */
+.card-holder {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    /*border: 1px solid red*/
+
+}
+
+.card {
+    width: 175px;
+    /*border: 1px solid red;*/
+
+    transition: all 0.3s;
+}
+
+.card:hover{transform: translateY(-10px);}
+
+.card-title {
+    font-weight: 500;
+    color: #E9E9E9;
+
+    padding-bottom: 1rem;
+}
+
+.card-description {
+    font-weight: 400;
+    color: #999999;
+}
+
+/* About Section */
+.socials {
+    display: flex;
+    gap: 1.5vw;
+
+    margin-top: 3rem;
+}
+
+.social-link {
+    display: inline-block;
+    border-bottom: 1px solid #0F0F0F;
+    transition: all 0.7s;
+}
+
+.social-text {
+    color: #999999;
+    margin-bottom: 10px;
+    transition: all 0.7s;
+}
+
+.social-link:hover {
+    border-bottom-color: white;
+    transform: translateY(-5px);
+}
+
+.social-link:hover .social-text {
+    transform: translateY(5px);
+}
+
+/* ID's */
+#name {
+    display: block;
+    gap: 1rem;
+    width: 25vw;
+    height: 400px;
+
+    margin: 0 auto 12rem auto;
+
+    transition: all 0.7s;
+}
+
+#name:hover {
+    width: 28vw;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    main {margin: 0 20vw 200px;}
+
+    .card-holder {gap: 3vw;}
+
+    .section-head {letter-spacing: 4vw;}
+
+    .section:hover .section-head {letter-spacing: 7vw;}
+
+    .socials {gap: 3vw;}
+}
+
+@media (max-width: 500px) {
+    main {margin: 0 7vw 200px;}
+
+    nav {display: none;}
+
+    .card-holder {gap: 3vw;}
+
+    .section-head {letter-spacing: 5vw;}
+
+    .section:hover .section-head {letter-spacing: 8vw;}
+
+    .socials {gap: 3vw;}
+
+    .hero-title {letter-spacing: 10vw;}
+
+    #name {transform:translateX(-5vw)}
+
+    #name:hover {transform:translateX(0)}
+}

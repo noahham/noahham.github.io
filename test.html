@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="hover-area">Hover me</div>
+<h1 class="title">Title 1</h1>
+<h1 class="title">Title 2</h1>
+<p class="description">This is a paragraph</p>
+
+<style>
+  .title, .description {
+    color: black;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+
+  .hover-area:hover ~ .title,
+  .hover-area:hover ~ .description {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+
+</body>
+</html>
