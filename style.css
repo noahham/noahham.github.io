@@ -86,7 +86,7 @@ p {
     color: white;
     opacity: 25%;
 
-    transition: all 0.3s
+    transition: all 0.5s
 }
 
 .nav-link:hover {opacity: 100%}
@@ -212,7 +212,7 @@ body::-webkit-scrollbar {
     .socials {gap: 3vw;}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     main {margin: 0 7vw 200px;}
 
     nav {display: none;}
@@ -230,4 +230,6 @@ body::-webkit-scrollbar {
     #name {transform:translateX(-5vw)}
 
     #name:hover {transform:translateX(0)}
+
+
 }
