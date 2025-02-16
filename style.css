@@ -26,7 +26,35 @@ nav {
 
 main {
     margin: 0 31.25vw 200px;
-    padding-top: 30vh
+    padding-top: 30vh;
+}
+
+/* Kinda out of place but on-load effects and classes */
+.main {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.main #name .hero-title {
+    line-height: 11rem;
+    transition: all 1s;
+}
+
+.main.after {
+    opacity: 1;
+}
+
+.main.after #name .hero-title {
+    line-height: 10rem;
+}
+
+.main #about p {
+    line-height: 1.75rem;
+    transition: all 1s;
+}
+
+.main.after #about p {
+    line-height: 1.5rem;
 }
 
 h1 {

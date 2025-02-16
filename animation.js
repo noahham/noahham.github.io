@@ -132,3 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach(section => observer.observe(section));
 });
+
+// The on-load effect
+window.addEventListener("load", () => {
+    document.querySelector(".main").classList.add("after");
+});
