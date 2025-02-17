@@ -258,6 +258,4 @@ body::-webkit-scrollbar {
     #name {transform:translateX(-5vw)}
 
     #name:hover {transform:translateX(0)}
-
-
 }
