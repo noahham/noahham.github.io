@@ -83,6 +83,20 @@ document.querySelectorAll('a[href^="#name"]').forEach(anchor => {
     });
 });
 
+// Scrolls to Experience section
+document.querySelectorAll('a[href^="#experience"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const targetID = this.getAttribute("href");
+        const targetElement = document.querySelector(targetID);
+
+        if (targetElement) {
+            smoothScrollTo(targetElement.offsetTop + 125);
+        }
+    });
+});
+
 // Scrolls to Projects section
 document.querySelectorAll('a[href^="#projects"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {

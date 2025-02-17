@@ -15,7 +15,7 @@ nav {
     display: flex;
     width: 100vw;
     position: fixed;
-    gap: 65px;
+    gap: 55px;
 
     padding-top: 1vh;
     padding-bottom: 4vh;
@@ -40,21 +40,10 @@ main {
     transition: all 1s;
 }
 
-.main.after {
-    opacity: 1;
-}
+.main.after {opacity: 1;}
 
 .main.after #name .hero-title {
     line-height: 10rem;
-}
-
-.main #about p {
-    line-height: 1.75rem;
-    transition: all 1s;
-}
-
-.main.after #about p {
-    line-height: 1.5rem;
 }
 
 h1 {
@@ -63,7 +52,7 @@ h1 {
 
     color: #4B4B4B;
 
-    padding-top: 300px;
+    padding-top: 200px;
     margin-bottom: 80px;
 }
 
@@ -100,12 +89,12 @@ p {
 /* General */
 
 .section-head {
-    letter-spacing: 3vw;
+    letter-spacing: 2vw;
     transition: all 0.7s;
 }
 
 .section:hover .section-head {
-    letter-spacing: 4.75vw;
+    letter-spacing: 3.4vw;
 }
 
 /* Nav Section */
@@ -151,6 +140,38 @@ p {
     line-height: 10rem;
 }
 
+/* Experience Section */
+.timeline-holder {
+    display: flex;
+    gap: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid red;*/
+}
+.line {
+    width: 1px;
+    height: 200px;
+    background-color: #4b4b4b;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #4b4b4b;
+    border-radius: 50%;
+
+    margin: 10px auto;
+}
+
+.timeline-block {width: 12rem;}
+
+.timeline-text {height: 220px;}
+
+.timeline-space {height: 220px;}
+
 /* Projects Section */
 .card-holder {
     width: auto;
@@ -167,9 +188,7 @@ p {
 .card:hover{transform: translateY(-10px);}
 
 .card-title {
-    font-weight: 500;
     color: #E9E9E9;
-
     padding-bottom: 1rem;
 }
 
