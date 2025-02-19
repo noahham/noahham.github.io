@@ -224,6 +224,7 @@ p {
 
 .social-link:hover .social-text {
     transform: translateY(5px);
+    color: white;
 }
 
 /* ID's */
