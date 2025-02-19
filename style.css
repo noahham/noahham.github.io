@@ -146,7 +146,6 @@ p {
     gap: 4rem;
     margin-left: auto;
     margin-right: auto;
-    /*border: 1px solid red;*/
 }
 .line {
     width: 1px;
@@ -168,7 +167,12 @@ p {
 
 .timeline-block {width: 12rem;}
 
-.timeline-text {height: 220px;}
+.timeline-text {
+    height: 220px;
+    transition: all 0.3s;
+}
+
+.timeline-text:hover {transform: translateY(-10px);}
 
 .timeline-space {height: 220px;}
 
@@ -207,7 +211,7 @@ p {
 
 .social-link {
     display: inline-block;
-    border-bottom: 1px solid #141414;
+    border-bottom: 2px solid #141414;
     transition: all 0.7s;
 }
 
