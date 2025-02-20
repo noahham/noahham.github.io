@@ -29,7 +29,8 @@ main {
     padding-top: 30vh;
 }
 
-/* Kinda out of place but on-load effects and classes */
+
+/* On-Load Effects */
 .main {
     opacity: 0;
     transition: all 1s;
@@ -45,6 +46,7 @@ main {
 .main.after #name .hero-title {
     line-height: 10rem;
 }
+
 
 h1 {
     font-family: "London-Underground", "serif";
@@ -88,13 +90,23 @@ p {
 
 /* General */
 
+
+
 .section-head {
     letter-spacing: 2vw;
-    transition: all 0.7s;
+    transition: all 1s;
 }
 
-.section:hover .section-head {
+#experience:hover .section-head {
     letter-spacing: 3.4vw;
+}
+
+#projects:hover .section-head {
+    letter-spacing: 4.6vw;
+}
+
+#about:hover .section-head {
+    letter-spacing: 8.5vw;
 }
 
 /* Nav Section */
@@ -168,13 +180,15 @@ p {
 .timeline-block {width: 12rem;}
 
 .timeline-text {
-    height: 220px;
+    height: 160px;
+    margin-bottom: 65px;
     transition: all 0.3s;
+    /*border: 1px red solid;*/
 }
 
 .timeline-text:hover {transform: translateY(-10px);}
 
-.timeline-space {height: 220px;}
+.timeline-space {height: 215px;}
 
 /* Projects Section */
 .card-holder {
