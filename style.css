@@ -94,7 +94,7 @@ p {
 
 .section-head {
     letter-spacing: 2vw;
-    transition: all 1s;
+    transition: all 1.3s;
 }
 
 #experience:hover .section-head {
