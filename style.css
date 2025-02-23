@@ -5,7 +5,9 @@
     src: url("assets/london-underground-regular.ttf");
 }
 
+
 /* DEFAULT ELEMENTS */
+
 body {
     background-color: #141414;
     margin: 0;
@@ -22,12 +24,12 @@ nav {
     padding-left: 2rem;
 
     background-image: linear-gradient(rgba(20, 20, 20, 1.0), rgba(20, 20, 20, 0.0));
+    z-index: 1000;
 }
 
 main {
     margin: 0 31.25vw 200px;
     padding-top: 30vh;
-    /*border: 1px red solid;*/
 }
 
 
@@ -92,8 +94,6 @@ p {
     letter-spacing: 1vw;
     transition: all 1.3s;
 }
-
-.section:hover .section-head {letter-spacing:1.5vw;}
 
 
 /* HERO SECTION */
@@ -188,10 +188,12 @@ p {
     height: 160px;
     margin-bottom: 65px;
     transition: all 0.3s;
-    /*border: 1px red solid;*/
 }
 
-.timeline-text:hover {transform: translateY(-10px);}
+.timeline-text:hover {
+    transform: translateY(-10px);
+    z-index: 10;
+}
 
 .timeline-space {height: 215px;}
 
@@ -210,10 +212,13 @@ p {
     transition: all 0.3s;
 }
 
-.card:hover{transform: translateY(-10px);}
+.card:hover{
+    transform: translateY(-10px);
+    z-index: 10;
+}
 
 .card-title {
-    color: #E9E9E9;
+    color: #dddddd;
     padding-bottom: 1rem;
 }
 
@@ -222,7 +227,9 @@ p {
     color: #999999;
 }
 
+
 /* ABOUT SECTION */
+
 .socials {
     display: flex;
     gap: 1.5vw;
@@ -230,46 +237,29 @@ p {
     margin-top: 3rem;
 }
 
-.social-link {
-    display: inline-block;
-    border-bottom: 2px solid #141414;
-    transition: all 0.7s;
-}
-
 .social-text {
     color: #999999;
-    margin-bottom: 10px;
     transition: all 0.7s;
 }
 
-.social-link:hover {
-    border-bottom-color: white;
-    transform: translateY(-5px);
-}
-
-.social-link:hover .social-text {
-    transform: translateY(5px);
-    color: white;
-}
+.social-text:hover {color: white;}
 
 
 /* SCROLLBAR */
 
-body::-webkit-scrollbar {
-    width: 0;
-}
+body::-webkit-scrollbar {width: 0;}
+
 
 @media (max-width: 1100px) {
     main {margin: 0 20vw 200px;}
 
     .card-holder {gap: 3vw;}
 
-    .section-head {letter-spacing: 4vw;}
-
-    .section:hover .section-head {letter-spacing: 7vw;}
+    .section-head {letter-spacing: 1vw;}
 
     .socials {gap: 3vw;}
 }
+
 
 @media (max-width: 768px) {
 
@@ -287,9 +277,7 @@ body::-webkit-scrollbar {
 
     #name {transform:translateX(-5vw)}
 
-
     /* Disabling all hover effects for mobile */
-    .section:hover .section-head {letter-spacing:5vw;}
 
     #name:hover {transform:translateX(-5vw)}
 
@@ -301,13 +289,7 @@ body::-webkit-scrollbar {
 
     .card:hover{transform: translateY(0);}
 
-    .social-link:hover {
-        border-bottom-color: #141414;
-        transform: translateY(0);
-    }
-
-    .social-link:hover .social-text {
-        transform: translateY(0);
+    .social-text:hover {
         color: #999999;
     }
 }
