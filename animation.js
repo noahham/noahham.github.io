@@ -38,7 +38,8 @@ document.querySelector("#name").addEventListener("mouseenter", () => {
 
     document.querySelectorAll(".fading-dot").forEach(fadingDot => {
         fadingDot.style.color = "#0F0F0F";
-        fadingDot.style.transition = "all 0.3s";
+        fadingDot.style.lineHeight = "3rem";
+        fadingDot.style.transition = "all 0.4s";
     });
 
     document.querySelectorAll("#ham").forEach(ham => {
@@ -60,6 +61,7 @@ document.querySelector("#name").addEventListener("mouseleave", () => {
 
     document.querySelectorAll(".fading-dot").forEach(fadingDot => {
         fadingDot.style.color = "";
+        fadingDot.style.lineHeight = "";
     });
 
     document.querySelectorAll("#ham").forEach(ham => {
