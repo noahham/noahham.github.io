@@ -88,7 +88,7 @@ p {
     color: #DDDDDD;
 }
 
-.section {display:block;}
+.section {display:block;overflow:hidden;}
 
 .section-head {
     letter-spacing: 1vw;
@@ -120,6 +120,7 @@ p {
 .fading-dot {
     padding: 0;
     margin-right: 1vw;
+    transform: translateY(3px);
 
     line-height: 8rem;
 }
@@ -273,15 +274,19 @@ body::-webkit-scrollbar {width: 0;}
 
     .socials {gap: 3vw;}
 
-    .hero-title {letter-spacing: 10vw;}
+    .hero-title {letter-spacing: 12vw;}
 
-    #name {transform:translateX(-5vw)}
+    #name {
+        transform:translateX(3px);
+        gap: 1rem;
+        width: 50vw;
+    }
 
     /* Disabling all hover effects for mobile */
 
-    #name:hover {transform:translateX(-5vw)}
+    #name:hover {transform:translateX(3px)}
 
-    #name:hover {width: 25vw;}
+    #name:hover {width: 50vw;}
 
     .nav-link:hover {opacity: 100%}
 
