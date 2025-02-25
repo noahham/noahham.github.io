@@ -55,7 +55,7 @@ h1 {
     font-family: "London-Underground", "serif";
     font-size: 1rem;
 
-    color: #4B4B4B;
+    color: #2F2F2F;
 
     padding-top: 200px;
     margin-bottom: 80px;
@@ -88,12 +88,32 @@ p {
     color: #DDDDDD;
 }
 
-.section {display:block;overflow:hidden;}
+.section {
+    display:block;
+    overflow:hidden;
+
+    padding-top: 200px;
+}
 
 .section-head {
-    letter-spacing: 1vw;
+    letter-spacing: 30px;
     transition: all 1.3s;
 }
+
+
+/* NAV SECTION */
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    opacity: 15%;
+
+    transition: all 0.5s
+}
+
+.nav-link:hover {opacity: 100%}
+
+.nav-link.active {opacity: 100%}
 
 
 /* HERO SECTION */
@@ -131,27 +151,13 @@ p {
     width: 25vw;
     height: 400px;
 
+    padding-top: 0;
     margin: 0 auto 12rem auto;
 
     transition: all 0.7s;
 }
 
 #name:hover {width: 28vw;}
-
-
-/* NAV SECTION */
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    opacity: 25%;
-
-    transition: all 0.5s
-}
-
-.nav-link:hover {opacity: 100%}
-
-.nav-link.active {opacity: 100%}
 
 
 /* EXPERIENCE SECTION */
@@ -168,7 +174,7 @@ p {
 .line {
     width: 1px;
     height: 200px;
-    background-color: #4b4b4b;
+    background-color: #2F2F2F;
 
     margin-left: auto;
     margin-right: auto;
@@ -177,7 +183,7 @@ p {
 .timeline-dot {
     width: 5px;
     height: 5px;
-    background-color: #4b4b4b;
+    background-color: #2F2F2F;
     border-radius: 50%;
 
     margin: 10px auto;
@@ -255,8 +261,6 @@ body::-webkit-scrollbar {width: 0;}
     main {margin: 0 20vw 200px;}
 
     .card-holder {gap: 3vw;}
-
-    .section-head {letter-spacing: 1vw;}
 
     .socials {gap: 3vw;}
 }
