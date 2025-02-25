@@ -263,6 +263,13 @@ body::-webkit-scrollbar {width: 0;}
     .card-holder {gap: 3vw;}
 
     .socials {gap: 3vw;}
+
+    #name {
+        /*border: 1px red solid;*/
+        width: 30vw;
+    }
+
+    #name:hover {width: 30vw;}
 }
 
 
