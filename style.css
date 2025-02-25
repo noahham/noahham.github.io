@@ -274,7 +274,17 @@ body::-webkit-scrollbar {width: 0;}
 
     /* increase font size */
 
-    body {font-size: 40px;}
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
 
 
     main {margin: 0 7vw 200px;}
