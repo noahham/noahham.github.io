@@ -74,9 +74,6 @@ h3 {
 }
 
 a {
-    font-family: "Inter", "sans-serif";
-    font-weight: 400;
-    font-size: 1rem;
     color: #999999;
     text-decoration: none;
 }
@@ -274,6 +271,11 @@ body::-webkit-scrollbar {width: 0;}
 
 
 @media (max-width: 768px) {
+
+    /* increase font size */
+
+    body {font-size: 1.25rem;}
+
 
     main {margin: 0 7vw 200px;}
 
