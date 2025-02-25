@@ -275,15 +275,15 @@ body::-webkit-scrollbar {width: 0;}
     /* increase font size */
 
     h1 {
-        font-size: 3rem;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 40px;
     }
 
     p {
-        font-size: 3rem;
+        font-size: 40px;
     }
 
 
