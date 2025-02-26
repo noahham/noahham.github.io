@@ -143,7 +143,6 @@ p {
 }
 
 #name {
-    border: 1px red solid;
     display: block;
     gap: 1rem;
     width: 25vw;
