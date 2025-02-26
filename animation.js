@@ -153,7 +153,7 @@ window.addEventListener("load", () => {
     document.querySelector(".main").classList.add("after");
 
     function blockEvents(e) {
-        if (window.innerWidth <= 768 && e.type !== "load") {
+        if (window.innerWidth <= 800 && e.type !== "load") {
             e.stopImmediatePropagation(); // Prevents all other listeners from running
         }
     }

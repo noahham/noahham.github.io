@@ -143,13 +143,14 @@ p {
 }
 
 #name {
+    border: 1px red solid;
     display: block;
     gap: 1rem;
     width: 25vw;
-    height: 400px;
+    height: 500px;
 
     padding-top: 0;
-    margin: 0 auto 12rem auto;
+    margin: 0 auto 10rem auto;
 
     transition: all 0.7s;
 }
