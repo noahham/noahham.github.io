@@ -139,6 +139,9 @@ p {
     margin-right: 1vw;
     transform: translateY(3px);
 
+    color: white;
+    opacity: 0.2;
+
     line-height: 8rem;
 }
 
