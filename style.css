@@ -13,43 +13,16 @@ body {
     margin: 0;
 }
 
-nav {
-    display: flex;
-    width: 100vw;
-    position: fixed;
-    gap: 45px;
 
-    padding-top: 1vh;
-    padding-bottom: 4vh;
-    padding-left: 2rem;
-
-    background-image: linear-gradient(rgba(20, 20, 20, 1.0), rgba(20, 20, 20, 0.0));
-    z-index: 1000;
-}
 
 main {
     margin: 0 31.25vw 200px;
     padding-top: 30vh;
 }
 
-
-/* On-Load Effects */
-.main {
-    opacity: 0;
-    transition: all 1s;
+::selection {
+    background: #2c2c2c;
 }
-
-.main #name .hero-title {
-    line-height: 11rem;
-    transition: all 1s;
-}
-
-.main.after {opacity: 1;}
-
-.main.after #name .hero-title {
-    line-height: 10rem;
-}
-
 
 h1 {
     font-family: "London-Underground", "serif";
@@ -86,8 +59,8 @@ p {
 }
 
 .section {
-    display:block;
-    overflow:hidden;
+    display: block;
+    overflow: hidden;
 
     padding-top: 200px;
 }
@@ -98,7 +71,40 @@ p {
 }
 
 
+/* On-Load Effects */
+
+.main {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.main #name .hero-title {
+    line-height: 11rem;
+    transition: all 1s;
+}
+
+.main.after {opacity: 1;}
+
+.main.after #name .hero-title {
+    line-height: 10rem;
+}
+
+
 /* NAV SECTION */
+
+nav {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    gap: 45px;
+
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+    padding-left: 2rem;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 1.0), rgba(20, 20, 20, 0.0));
+    z-index: 1000;
+}
 
 .nav-link {
     text-decoration: none;
@@ -254,7 +260,17 @@ p {
 
 /* SCROLLBAR */
 
-body::-webkit-scrollbar {width: 0;}
+::-webkit-scrollbar {width: 7px;}
+
+::-webkit-scrollbar-track {background: #141414;}
+
+::-webkit-scrollbar-thumb {
+    background: #2c2c2c;
+    border-radius: 5px;
+    z-index:1;
+}
+
+::-webkit-scrollbar-thumb:hover {background: #3d3d3d;}
 
 
 @media (max-width: 1100px) {
