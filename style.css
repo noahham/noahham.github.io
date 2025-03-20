@@ -304,11 +304,14 @@ nav {
 }
 
 
+/* Mobile */
 @media (max-width: 800px) and (orientation: portrait) {
     main {
         margin: 0 7vw 10vh;
         padding-top: 250px;
     }
+
+    .section {padding-top: 100px;}
 
     nav {display: none;}
 
