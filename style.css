@@ -13,11 +13,9 @@ body {
     margin: 0;
 }
 
-
-
 main {
     margin: 0 31.25vw 200px;
-    padding-top: 30vh;
+    padding-top: 300px;
 }
 
 ::selection {
@@ -214,15 +212,26 @@ nav {
 /* PROJECTS SECTION */
 
 .card-holder {
-    width: auto;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .card {
     width: 175px;
+    height: 175px;
     transition: all 0.3s;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 175px;
 }
 
 .card:hover{
@@ -272,8 +281,19 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {background: #3d3d3d;}
 
+.card-holder::-webkit-scrollbar {width: 7px !important;}
 
-@media (max-width: 1000px) {
+.card-holder::-webkit-scrollbar-track {background: #141414;}
+
+.card-holder::-webkit-scrollbar-thumb {
+    background: #2c2c2c;
+    border-radius: 5px;
+}
+
+.card-holder::-webkit-scrollbar-thumb:hover {background: #3d3d3d;}
+
+
+@media (max-width: 1300px) {
     main {margin: 0 20vw 200px;}
 
     .card-holder {gap: 3vw;}
@@ -287,24 +307,14 @@ nav {
 
 
 @media (max-width: 800px) and (orientation: portrait) {
-    /* increase font size */
-
-    /*h1 {*/
-    /*    font-size: 24px;*/
-    /*}*/
-
-    /*h2 {*/
-    /*    font-size: 24px;*/
-    /*}*/
-
-    /*p {*/
-    /*    font-size: 24px;*/
-    /*}*/
-
-
-    main {margin: 0 7vw 200px;}
+    main {
+        margin: 0 7vw 200px;
+        padding-top: 250px;
+    }
 
     nav {display: none;}
+
+    .timeline-holder {gap: 3rem;}
 
     .card-holder {gap: 3vw;}
 
