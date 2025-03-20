@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    margin: 0 31.25vw 200px;
+    margin: 0 31.25vw 30vh;
     padding-top: 300px;
 }
 
@@ -83,9 +83,7 @@ p {
 
 .main.after {opacity: 1;}
 
-.main.after #name .hero-title {
-    line-height: 10rem;
-}
+.main.after #name .hero-title {line-height: 10rem;}
 
 
 /* NAV SECTION */
@@ -308,7 +306,7 @@ nav {
 
 @media (max-width: 800px) and (orientation: portrait) {
     main {
-        margin: 0 7vw 200px;
+        margin: 0 7vw 10vh;
         padding-top: 250px;
     }
 
