@@ -1,7 +1,11 @@
 // Scrolls animation
 function smoothScrollTo(targetY, duration = 1000) { // duration in milliseconds
     const startY = window.scrollY;
-    const distance = targetY - startY;
+
+    const mediaQuery = window.matchMedia("(max-width: 800px) and (orientation: portrait)");
+    const offset = mediaQuery.matches ? 50 : 0; // Apply offset only for the media query
+
+    const distance = targetY - startY - offset;
     let startTime = null;
 
     function animationStep(timestamp) {

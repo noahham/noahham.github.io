@@ -15,7 +15,7 @@ body {
 
 main {
     margin: 0 31.25vw 30vh;
-    padding-top: 300px;
+    padding-top: 225px;
 }
 
 ::selection {
@@ -308,7 +308,7 @@ nav {
 @media (max-width: 800px) and (orientation: portrait) {
     main {
         margin: 0 7vw 10vh;
-        padding-top: 250px;
+        padding-top: 200px;
     }
 
     .section {padding-top: 100px;}
