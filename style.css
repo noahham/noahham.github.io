@@ -11,11 +11,13 @@
 body {
     background-color: #141414;
     margin: 0;
+    overflow-y: auto;
 }
 
 main {
-    margin: 0 31.25vw 30vh;
+    margin: 0 29vw 30vh;
     padding-top: 225px;
+    transform: translateX(7px);
 }
 
 ::selection {
@@ -92,7 +94,7 @@ nav {
     display: flex;
     width: 100vw;
     position: fixed;
-    gap: 45px;
+    gap: 35px;
 
     padding-top: 1vh;
     padding-bottom: 4vh;
@@ -267,28 +269,21 @@ nav {
 
 /* SCROLLBAR */
 
-::-webkit-scrollbar {width: 7px;}
+::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
 
-::-webkit-scrollbar-track {background: #141414;}
+::-webkit-scrollbar-track {background: transparent;}
 
 ::-webkit-scrollbar-thumb {
     background: #2c2c2c;
     border-radius: 5px;
-    z-index:1;
+    z-index: 1;
+    transition: all 1s;
 }
 
 ::-webkit-scrollbar-thumb:hover {background: #3d3d3d;}
-
-.card-holder::-webkit-scrollbar {width: 7px !important;}
-
-.card-holder::-webkit-scrollbar-track {background: #141414;}
-
-.card-holder::-webkit-scrollbar-thumb {
-    background: #2c2c2c;
-    border-radius: 5px;
-}
-
-.card-holder::-webkit-scrollbar-thumb:hover {background: #3d3d3d;}
 
 
 @media (max-width: 1300px) {
@@ -309,6 +304,7 @@ nav {
     main {
         margin: 0 7vw 10vh;
         padding-top: 200px;
+        transform: translateX(0);
     }
 
     .section {padding-top: 100px;}
