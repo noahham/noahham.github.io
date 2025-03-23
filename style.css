@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    margin: 30vh 29vw 30vh;
+    margin: 30vh 29vw 20vh;
     transform: translateX(7px);
 }
 
@@ -272,7 +272,10 @@ nav {
 
 
 @media (max-width: 1300px) {
-    main {margin: 30vh 20vw 200px;}
+    main {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
 
     .row {width: calc((60vw - 20px) / 3);}
 
