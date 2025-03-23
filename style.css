@@ -19,8 +19,7 @@ body {
 }
 
 main {
-    margin: 0 29vw 30vh;
-    padding-top: 32.5vh;
+    margin: 30vh 29vw 30vh;
     transform: translateX(7px);
 }
 
@@ -67,11 +66,6 @@ p {
     padding-top: 150px;
 }
 
-.section-head {
-    letter-spacing: 30px;
-    transition: all 1.3s;
-}
-
 
 /* On-Load Effects */
 
@@ -93,32 +87,13 @@ p {
 /* NAV SECTION */
 
 nav {
-    display: flex;
     width: 100vw;
     position: fixed;
-    gap: 35px;
-
-    padding-top: 1vh;
-    padding-bottom: 4vh;
-    padding-left: 2rem;
+    padding-bottom: 10rem;
 
     background-image: linear-gradient(rgba(20, 20, 20, 1.0), rgba(20, 20, 20, 0.0));
     z-index: 1000;
 }
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    opacity: 15%;
-
-    transition: all 0.5s
-}
-
-.nav-link:hover {opacity: 100%}
-
-.nav-link.active {opacity: 100%}
-
-h3 {line-height: 1rem;}
 
 
 /* HERO SECTION */
@@ -297,7 +272,7 @@ h3 {line-height: 1rem;}
 
 
 @media (max-width: 1300px) {
-    main {margin: 0 20vw 200px;}
+    main {margin: 30vh 20vw 200px;}
 
     .row {width: calc((60vw - 20px) / 3);}
 
@@ -312,14 +287,11 @@ h3 {line-height: 1rem;}
 /* Mobile */
 @media (max-width: 800px) and (orientation: portrait) {
     main {
-        margin: 0 7vw 10vh;
-        padding-top: 200px;
+        margin: 200px 7vw 10vh;
         transform: translateX(0);
     }
 
     .section {padding-top: 100px;}
-
-    nav {display: none;}
 
     .timeline-holder {gap: 3rem;}
 
@@ -343,13 +315,9 @@ h3 {line-height: 1rem;}
 
     #name:hover {width: 50vw;}
 
-    .nav-link:hover {opacity: 100%}
-
     .timeline-text:hover {transform: translateY(0);}
 
     .card:hover{transform: translateY(0);}
 
-    .social-text:hover {
-        color: #999999;
-    }
+    .social-text:hover {color: #999999;}
 }
