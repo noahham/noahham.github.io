@@ -89,7 +89,7 @@ p {
 nav {
     width: 100vw;
     position: fixed;
-    padding-bottom: 10rem;
+    height: 5rem;
 
     background-image: linear-gradient(rgba(20, 20, 20, 1.0), rgba(20, 20, 20, 0.0));
     z-index: 1000;

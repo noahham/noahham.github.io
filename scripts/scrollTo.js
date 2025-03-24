@@ -3,7 +3,7 @@ function smoothScrollTo(targetY, duration = 1000) { // duration in milliseconds
     const startY = window.scrollY;
 
     const mediaQuery = window.matchMedia("(max-width: 800px) and (orientation: portrait)");
-    const offset = mediaQuery.matches ? 50 : 75; // Apply offset only for the media query
+    const offset = mediaQuery.matches ? -140 : -200; // Apply offset only for the media query
 
     const distance = targetY - startY - offset;
     let startTime = null;
