@@ -312,13 +312,9 @@ nav {
         width: 50vw;
     }
 
-    /* Disabling all hover effects for mobile */
+    /* Disable hero text animation for mobile */
 
     #name:hover {transform:translateX(3px)}
 
     #name:hover {width: 50vw;}
-
-    .timeline-text:hover {transform: translateY(0);}
-
-    .card:hover{transform: translateY(0);}
 }
