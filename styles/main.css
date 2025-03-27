@@ -1,5 +1,6 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @font-face {
     font-family: "London-Underground";
     src: url("../media/london-underground-regular.ttf");
@@ -16,6 +17,7 @@ body {
     flex-direction: column;
     align-content: center;
     overflow-y: auto;
+    letter-spacing: 0.01rem;
 }
 
 main {
@@ -23,11 +25,12 @@ main {
     transform: translateX(7px);
 }
 
-::selection {background: #2c2c2c;}
+::selection {background: #3d3d3d;}
 
 h1 {
     font-family: "London-Underground", "serif";
     font-size: 1rem;
+    letter-spacing: normal;
 
     color: #2F2F2F;
 
@@ -36,8 +39,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", "sans-serif";
-    font-weight: 500;
+    font-family: "DM Sans", "sans-serif";
+    font-weight: 600;
     font-size: 1rem;
 }
 
@@ -53,10 +56,10 @@ a {
 }
 
 p {
-    font-family: "Inter", "sans-serif";
+    font-family: "DM Sans", "sans-serif";
     font-weight: 400;
     font-size: 1rem;
-    color: #DDDDDD;
+    color: #e3e3e3;
 }
 
 .section {
@@ -225,7 +228,7 @@ nav {
 }
 
 .card-title {
-    color: #dddddd;
+    color: #e3e3e3;
     padding-bottom: 1rem;
 }
 
