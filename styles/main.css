@@ -1,6 +1,5 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @font-face {
     font-family: "London-Underground";
     src: url("../media/london-underground-regular.ttf");
@@ -17,7 +16,7 @@ body {
     flex-direction: column;
     align-content: center;
     overflow-y: auto;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.02rem;
 }
 
 main {
@@ -39,7 +38,7 @@ h1 {
 }
 
 h2 {
-    font-family: "DM Sans", "sans-serif";
+    font-family: "Inter", "sans-serif";
     font-weight: 600;
     font-size: 1rem;
 }
@@ -56,7 +55,7 @@ a {
 }
 
 p {
-    font-family: "DM Sans", "sans-serif";
+    font-family: "Inter", "sans-serif";
     font-weight: 400;
     font-size: 1rem;
     color: #e3e3e3;
@@ -184,7 +183,7 @@ nav {
 }
 
 .timeline-text:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     z-index: 10;
 }
 
@@ -223,7 +222,7 @@ nav {
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     z-index: 10;
 }
 
