@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project Name</title>
+        <link rel="icon" href="https://noahham.com/media/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/breakout.css">
+        <style>
+            /* In-Document styling for song card */
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+            #song-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                background-color: #f0f0f0;
+                min-width: 50%;
+                max-width: 75%;
+                height: 30vh;
+                border-radius: 10px;
+
+                margin: 5rem auto;
+                padding: 1rem;
+                transition: all 0.5s;
+            }
+
+            .cover-and-links {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #cover {
+                width: 140px;
+                height: 140px;
+                border-radius: 5px;
+
+                transition: all 0.5s;
+            }
+
+            #cover:hover {transform: scale(1.03);}
+
+            .music-link-holder {
+                display: flex;
+                margin: 0;
+                gap: 10px;
+            }
+
+            .icon-link {
+                width: 30px;
+                height: 30px;
+                transition: all 0.3s;
+            }
+
+            .icon-link:hover {transform: scale(1.05);}
+
+            .icon {width: 30px;}
+
+            #title {
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 2rem;
+                line-height: 2rem;
+                letter-spacing: -0.05rem;
+
+                color: black;
+                margin: 0.5rem 0 0.5rem;
+            }
+
+            #artist {
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                font-weight: 500;
+                letter-spacing: -0.01rem;
+
+                color: black;
+                margin: 0;
+            }
+
+            @media (max-width: 748px) {
+                #song-card {width: 100%;}
+
+                #cover {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .icon {width: 25px;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <a href="https://noahham.com"><p class="back-text">&larr; Back to Home</p></a>
+            <div class="text-holder">
+                <h2 style="margin-bottom:3rem;">Trebbbble</h2>
+                <p>A website that can recognize music from short-form videos.</p>
+                <p class="dramatic">A common problem that a lot of people have when it comes to watching short-form content stems from one of its main features: The music. </p>
+                <p>With songs becoming more and more viral overnight, it's difficult for those watching short-form content like TikTok, Instagram Reels, or YouTube Shorts to continue listening to the music shown in their videos when the song is only played for 10-15 seconds.</p>
+                <p class="dramatic"><i>This is exactly what Trebbbble was created for.</i></p>
+                <div id="song-card">
+                    <div class="cover-and-links">
+                        <img src="media/cover.jpg" alt="Album Cover" id="cover">
+                        <div class="music-link-holder">
+                            <a href="https://open.spotify.com/search/Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="media/spotify.svg" alt="Spotify" class="icon"></a>
+                            <a href="https://music.youtube.com/search?q=Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="media/yt_music.svg" alt="YouTube Music" class="icon"></a>
+                            <a href="https://music.apple.com/us/search?term=Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="media/apple_music.svg" alt="Apple Music" class="icon"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 id="title">Complexion (A Zulu Love)</h2>
+                        <h3 id="artist">Kendrick Lamar</h3>
+                    </div>
+                </div>
+                <p class="dramatic">Using ACRCloud's music recognition API and some relatively simple requests, users can provide a link to whatever short-form content they like and have some music displayed to them.</p>
+                <div class="link-holder">
+                    <a href="https://noahham.com/trebbbble/" target="_blank"><p class="social-text">website</p></a>
+                    <a href="https://github.com/noahham/trebbbble" target="_blank"><p class="social-text">github</p></a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
