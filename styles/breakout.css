@@ -13,3 +13,11 @@ h2 {
 .text-holder {
     margin-top: 5rem;
 }
+
+.back-text {
+    color: #999999;
+    transition: all 0.5s;
+
+}
+
+.back-text:hover {color: white;}
