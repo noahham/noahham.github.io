@@ -244,7 +244,7 @@ nav {
 
 /* ABOUT SECTION */
 
-.socials {
+.link-holder {
     display: flex;
     gap: 1.5vw;
 
@@ -286,7 +286,7 @@ nav {
 
     .row {width: calc((60vw - 20px) / 3);}
 
-    .socials {gap: 3vw;}
+    .link-holder {gap: 3vw;}
 
     #name {width: 30vw;}
 
@@ -309,7 +309,7 @@ nav {
 
     .section-head {letter-spacing: 5vw;}
 
-    .socials {gap: 3vw;}
+    .link-holder {gap: 3vw;}
 
     .hero-title {letter-spacing: 12vw;}
 
