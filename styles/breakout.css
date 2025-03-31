@@ -6,18 +6,15 @@ main {
     margin-top: 4rem;
 }
 
-h2 {
-    color: white;
-}
+h2 {color: white;}
 
-.text-holder {
-    margin-top: 5rem;
-}
+.dramatic {margin-top: 3rem;}
+
+.text-holder {margin-top: 5rem;}
 
 .back-text {
     color: #999999;
     transition: all 0.5s;
-
 }
 
 .back-text:hover {color: white;}
