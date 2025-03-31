@@ -106,7 +106,7 @@ nav {
     margin:0;
 
     text-align: left;
-    color: white;
+    color: #e3e3e3;
     letter-spacing: 7vw;
     line-height: 10rem;
 }
@@ -304,7 +304,7 @@ nav {
 
     .section {padding-top: 100px;}
 
-    .timeline-holder {gap: 3rem;}
+    .timeline-holder {gap: 2rem;}
 
     .row {width: calc((86vw - 20px) / 3);}
 
