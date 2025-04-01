@@ -206,7 +206,7 @@ nav {
 .card-holder {
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 20px;
     overflow-x: auto;
     scrollbar-width: none;
 }
@@ -219,8 +219,8 @@ nav {
 .row {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: calc((42vw - 20px) / 3); /* 100vw - margins - gaps / 3 */
+    gap: 20px;
+    width: calc((42vw - 40px) / 3); /* 100vw - margins - gaps / 3 */
     min-width: 175px;
 }
 
@@ -278,6 +278,16 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {background: #2c2c2c;}
 
+@media (max-width: 1520px) {
+    .row {
+        gap: 10px;
+        width: calc((42vw - 20px) / 3); /* 100vw - margins - gaps / 3 */
+    }
+
+    .card-holder {
+        gap: 10px;
+    }
+}
 
 @media (max-width: 1300px) {
     main {
