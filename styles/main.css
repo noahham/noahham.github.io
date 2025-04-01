@@ -252,12 +252,12 @@ nav {
     margin-top: 2rem;
 }
 
-.social-text {
+.social-link p {
     color: #999999;
     transition: all 0.7s;
 }
 
-.social-text:hover {color: white;}
+.social-link:hover p {color: white;}
 
 
 /* SCROLLBAR */
