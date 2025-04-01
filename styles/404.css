@@ -5,15 +5,14 @@ main {
     align-items: center;
 }
 
-.back-text {
+.back-link {margin-bottom: 13rem;}
+
+.back-link p {
     color: #999999;
     transition: all 0.5s;
-
 }
 
-.back-text:hover {color: white;}
-
-.back-link {margin-bottom: 13rem;}
+.back-link:hover p {color: white;}
 
 .error {
     margin: 0 0 4rem;
