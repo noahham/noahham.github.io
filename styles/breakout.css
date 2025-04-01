@@ -12,9 +12,9 @@ h2 {color: white;}
 
 .text-holder {margin-top: 5rem;}
 
-.back-text {
+.back-link p {
     color: #999999;
     transition: all 0.5s;
 }
 
-.back-text:hover {color: white;}
+.back-link:hover p {color: white;}
