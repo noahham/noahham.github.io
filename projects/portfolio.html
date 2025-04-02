@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" href="https://noahham.com/media/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/breakout.css">
+        <style>
+            .demo-holder {
+                display: flex;
+                width: 5.63rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .disappearing-text {transition: all 0.5s;}
+
+            .moving-dot {
+                user-select: none;
+                transform: translateY(-0.3rem);
+                color: #141414;
+                transition: all 0.5s;
+            }
+
+            .demo-holder:hover .disappearing-text {
+                color: #141414;
+                user-select: none;
+            }
+
+            .demo-holder:hover .moving-dot {color: #e3e3e3;}
+
+            .demo-holder:hover .moving-dot:nth-child(1) {transform: translate(2rem, -0.3rem);}
+
+            .demo-holder:hover .moving-dot:nth-child(3) {transform: translate(-2rem, -0.3rem);}
+        </style>
+    </head>
+    <body>
+        <main>
+            <a href="https://noahham.com/#projects" class="back-link"><p>&larr; back to home</p></a>
+            <div class="text-holder">
+                <h2 style="margin-bottom:3rem;">Portfolio</h2>
+                <p>A place to showcase my experience, projects, and skills.</p>
+                <p>Having a personal website is something I've always wanted to have. Being able to give someone a URL and have them see everything you've done is such a cool concept.</p>
+                <p>The big idea that I had for the site was the opening section. The part that would draw people in and show them that I know what I'm doing.</p>
+                <div class="demo-holder dramatic">
+                    <p class="moving-dot">.</p>
+                    <p class="disappearing-text">Hover Me!</p>
+                    <p class="moving-dot">.</p>
+                </div>
+                <p class="dramatic">This is the premise of the animation. While it's relatively simple, just an animation of translation and text color, it's also smooth and elegant.</p>
+                <div class="link-holder">
+                    <a href="https://github.com/noahham/wordle-solver/" target="_blank" class="social-link"><p>github</p></a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
