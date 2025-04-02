@@ -214,12 +214,13 @@ nav {
 .card {
     height: 200px;
     transition: all 0.3s;
+    /*border: 1px red solid;*/
 }
 
 .row {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: calc((42vw - 40px) / 3); /* 100vw - margins - gaps / 3 */
     min-width: 175px;
 }
@@ -278,16 +279,6 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {background: #2c2c2c;}
 
-@media (max-width: 1520px) {
-    .row {
-        gap: 10px;
-        width: calc((42vw - 20px) / 3); /* 100vw - margins - gaps / 3 */
-    }
-
-    .card-holder {
-        gap: 10px;
-    }
-}
 
 @media (max-width: 1300px) {
     main {
@@ -295,7 +286,7 @@ nav {
         margin-right: 20vw;
     }
 
-    .row {width: calc((60vw - 20px) / 3);}
+    .row {width: calc((60vw - 40px) / 3);}
 
     .link-holder {gap: 3vw;}
 
@@ -316,7 +307,7 @@ nav {
 
     .timeline-holder {gap: 2rem;}
 
-    .row {width: calc((86vw - 20px) / 3);}
+    .row {width: calc((86vw - 40px) / 3);}
 
     .section-head {letter-spacing: 5vw;}
 
