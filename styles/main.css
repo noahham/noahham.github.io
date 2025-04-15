@@ -21,6 +21,9 @@ body {
 
 main {
     margin: 30vh 29vw 20vh;
+
+    opacity: 0;
+    transition: all 0.75s;
     transform: translateX(7px);
 }
 
@@ -70,20 +73,14 @@ p {
 
 
 /* On-Load Effects */
-
-.main {
-    opacity: 0;
-    transition: all 1s;
-}
-
-.main #name .hero-title {
+main #name .hero-title {
     line-height: 11rem;
     transition: all 1s;
 }
 
-.main.after {opacity: 1;}
+main.after {opacity: 1;}
 
-.main.after #name .hero-title {line-height: 10rem;}
+main.after #name .hero-title {line-height: 10rem;}
 
 
 /* HERO SECTION */
@@ -185,7 +182,6 @@ p {
 /* PROJECTS SECTION */
 
 #projects {
-    /*border: 1px solid yellow;*/
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -203,7 +199,6 @@ p {
 .card {
     height: 200px;
     transition: all 0.3s;
-    /*border: 1px red solid;*/
 }
 
 .row {

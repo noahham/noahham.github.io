@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    document.querySelector(".main").classList.add("after");
+    document.querySelector("main").classList.add("after");
 
     function blockEvents(e) {
         if (window.innerWidth <= 800 && e.type !== "load") {
