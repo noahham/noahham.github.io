@@ -4,7 +4,21 @@ main {
     align-items: center;
 
     margin-top: 4rem;
+    transition: all 0.75s;
 }
+
+main .text-holder p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    transition: all 1s;
+}
+
+main.after .text-holder p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 h2 {color: #e3e3e3;}
 
