@@ -7,6 +7,22 @@ main {
 }
 
 h2 {color: white;}
+strong {
+    color: white;
+}
+
+ul, ol {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #e3e3e3;
+}
+
+code {
+    background-color: #1e1e1e;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0;
+}
 
 .dramatic {margin-top: 3rem;}
 
