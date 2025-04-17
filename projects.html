@@ -9,12 +9,30 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/breakout.css">
         <style>
-            p {color: #999999}
+            main {
+                margin-left: 35vw;
+                margin-right: 35vw;
+                /* FIXME */
+            }
+
+            main .project-holder {
+                gap: 56px;
+                transition: all 1s;
+            }
+
+            main.after .project-holder {gap: 48px;}
+
+            .project-holder {
+                display: flex;
+                flex-direction: column;
+                margin-top: 36px;
+            }
+
+            p {color: #999999; margin:0;}
 
             .project {
                 width: 100%;
-                margin-top: 16px;
-                transition: all 0.3s;
+                transition: transform 0.3s;
             }
 
             .project:hover {transform: translateY(-5px);}
@@ -22,39 +40,72 @@
             .project h2{transition: all 0.3s;}
 
             .project:hover h2 {color: white;}
+
+            .header-holder {
+                display: flex;
+                gap: 24px;
+                margin-bottom: 12px;
+            }
+
+            h2 {margin:0;}
+
+            .position {color: #434343;}
         </style>
     </head>
     <body>
         <main>
             <a href="index.html" class="back-link"><p>&larr;&ensp;back to home</p></a>
-            <a href="" class="project" style="margin-top: 5rem;">
-                <h2>Byte 'n Bite</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>DuckWeb Autofill</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>Photography Website</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>Portfolio Website</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>Trebbbble</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>Wellness Journal</h2>
-                <p>This will be a decently long gns</p>
-            </a>
-            <a href="" class="project">
-                <h2>Wordle Solver</h2>
-                <p>This will be a decently long gns</p>
-            </a>
+            <div class="project-holder">
+                <a href="projects/byte-n-bite.html" class="project" style="margin-top: 5rem;">
+                    <div class="header-holder">
+                        <h2>Byte 'n Bite</h2>
+                        <p class="position"><i>Python, Tkinter</i></p>
+                    </div>
+                    <p>An AI powered recipe database with lookup and generating capabilities.</p>
+                </a>
+                <a href="projects/duckweb-autofill" class="project">
+                    <div class="header-holder">
+                        <h2>DuckWeb Autofill</h2>
+                        <p class="position"><i>HTML, CSS, JavaScript</i></p>
+                    </div>
+                    <p>A simple Chrome extension to autofill your credentials for the University of Oregon's DuckWeb.</p>
+                </a>
+                <a href="projects/photography.html" class="project">
+                    <div class="header-holder">
+                        <h2>Photography Portfolio</h2>
+                        <p class="position"><i>HTML, CSS, JavaScript</i></p>
+                    </div>
+                    <p>A clean website that showcases my photography as a mock professional portfolio.</p>
+                </a>
+                <a href="projects/portfolio.html" class="project">
+                    <div class="header-holder">
+                        <h2>My Portfolio</h2>
+                        <p class="position"><i>HTML, CSS, JavaScript</i></p>
+                    </div>
+                    <p>This is the website you're on right now. I hope you like it :).</p>
+                </a>
+                <a href="projects/trebbbble.html" class="project">
+                    <div class="header-holder">
+                        <h2>Trebbbble</h2>
+                        <p class="position"><i>HTML, CSS, JavaScript, Python, Flask</i></p>
+                    </div>
+                    <p>A website designed to help people identify music from TikTok, Instagram Reels, or YouTube Shorts.</p>
+                </a>
+                <a href="projects/wellness-journal.html" class="project">
+                    <div class="header-holder">
+                        <h2>Wellness Journal</h2>
+                        <p class="position"><i>Python, Tkinter</i></p>
+                    </div>
+                    <p>A mindful app that helps users maintain their mental health through a survey-based approach.</p>
+                </a>
+                <a href="projects/wordle-solver.html" class="project">
+                    <div class="header-holder">
+                        <h2>Wordle Solver</h2>
+                        <p class="position"><i>Python, Tkinter</i></p>
+                    </div>
+                    <p>A helpful app that lets you solve the daily Wordle puzzle.</p>
+                </a>
+            </div>
         </main>
         <script src="scripts/onLoad.js"></script>
     </body>
