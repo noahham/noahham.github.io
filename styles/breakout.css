@@ -8,7 +8,7 @@ main {
 }
 
 main .text-holder {
-    gap: 25px;
+    gap: 24px;
     transition: all 1s;
 }
 
