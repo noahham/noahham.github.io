@@ -19,6 +19,7 @@ main.after .text-holder {
 
 h2 {
     color: #e3e3e3;
+    margin:0;
 }
 
 p {
