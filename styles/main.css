@@ -168,8 +168,6 @@ main.after #name .hero-title {line-height: 10rem;}
     z-index: 10;
 }
 
-.timeline-text:hover .card-title {color: white;}
-
 .timeline-space {height: 217px;}
 
 
@@ -208,8 +206,6 @@ main.after #name .hero-title {line-height: 10rem;}
     z-index: 10;
 }
 
-.card:hover .card-title {color: white;}
-
 .card-title {
     color: #e3e3e3;
     padding-bottom: 0.25rem;
@@ -235,8 +231,6 @@ main.after #name .hero-title {line-height: 10rem;}
     color: #999999;
     transition: all 0.7s;
 }
-
-.social-link:hover p {color: white;}
 
 
 /* SCROLLBAR */
