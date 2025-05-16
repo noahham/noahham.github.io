@@ -232,6 +232,7 @@ main.after #name .hero-title {line-height: 10rem;}
     transition: all 0.7s;
 }
 
+.social-link:hover p {color: #e3e3e3;}
 
 /* SCROLLBAR */
 
