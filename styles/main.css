@@ -9,7 +9,7 @@
 /* DEFAULT ELEMENTS */
 
 body {
-    background-color: #141414;
+    background-color: #191919;
     line-height: 1.65rem;
     margin: 0;
     display: flex;
@@ -90,7 +90,7 @@ main.after #name .hero-title {line-height: 10rem;}
 }
 
 .dot {
-    color: #141414;
+    color: #191919;
     letter-spacing: 8vw;
     text-align: center;
     line-height: 6rem;
