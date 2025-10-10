@@ -26,7 +26,7 @@ function smoothScrollTo(targetY, duration = 1000) { // duration in milliseconds
 }
 
 // Scrolls to Experience section
-document.querySelectorAll('a[href^="#experience"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#projects"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
 

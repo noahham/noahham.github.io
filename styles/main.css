@@ -74,7 +74,7 @@ main #name .hero-title {
 
 main.after {opacity: 1;}
 
-main.after #name .hero-title {line-height: 10rem;}
+main.after #name .hero-title {line-height: 12rem;}
 
 
 /* HERO SECTION */
@@ -253,6 +253,7 @@ main.after #name .hero-title {line-height: 10rem;}
 ::-webkit-scrollbar-thumb:hover {background: #2c2c2c;}
 
 
+/* Laptop */
 @media (max-width: 1300px) {
     main {
         margin-left: 20vw;
@@ -272,7 +273,7 @@ main.after #name .hero-title {line-height: 10rem;}
 /* Mobile */
 @media (max-width: 800px) and (orientation: portrait) {
     main {
-        margin: 200px 7vw 10vh;
+        margin: calc(50vh - 5rem) 7vw 10vh;
         transform: translateX(0);
     }
 
@@ -286,7 +287,19 @@ main.after #name .hero-title {line-height: 10rem;}
 
     .link-holder {gap: 3vw;}
 
-    .hero-title {letter-spacing: 12vw;}
+    .hero-title {letter-spacing: 13vw;}
+
+    main #name .hero-title {
+        line-height: 4rem;
+        transition: all 1s;
+    }
+
+    .fading-dot {
+        line-height: 1rem;
+    }
+
+
+    main.after #name .hero-title {line-height: 3rem;}
 
     #name {
         transform:translateX(3px);
