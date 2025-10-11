@@ -273,7 +273,7 @@ main.after #name .hero-title {line-height: 12rem;}
 /* Mobile */
 @media (max-width: 800px) and (orientation: portrait) {
     main {
-        margin: calc(50vh - 5rem) 7vw 10vh;
+        margin: calc(50vh - 7rem) 7vw 10vh;
         transform: translateX(0);
     }
 
@@ -304,7 +304,7 @@ main.after #name .hero-title {line-height: 12rem;}
     #name {
         transform:translateX(3px);
         gap: 1rem;
-        width: 50vw;
+        width: 65vw;
     }
 
     /* Disable hero text animation for mobile */
