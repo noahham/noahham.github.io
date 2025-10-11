@@ -19,9 +19,7 @@
             .project-holder {
                 display: flex;
                 flex-direction: column;
-                margin-top: 36px;
-                padding-left: 20px;
-                padding-right: 20px;
+                margin-top: calc(36px + 5rem);
             }
 
             .project-holder:hover .project {opacity: 0.5;}
@@ -56,9 +54,14 @@
     </head>
     <body>
         <main>
-            <a href="https://noahham.com/#about" class="back-link"><p>&larr;&ensp;back to home</p></a>
+            <div class="back-link-holder">
+                <a href="https://noahham.com/" class="back-link">
+                    <img src="media/arrow-left.svg" alt="Left Arrow" class="back-icon">
+                    <p>home</p>
+                </a>
+            </div>
             <div class="project-holder">
-                <a href="projects/byte-n-bite.html" class="project" style="margin-top: 5rem;">
+                <a href="projects/byte-n-bite.html" class="project">
                     <div class="header-holder">
                         <h2>Byte 'n Bite</h2>
                         <p class="position"><i>Python, Tkinter</i></p>
