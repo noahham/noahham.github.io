@@ -57,9 +57,26 @@ code {
     margin-top: 5rem;
 }
 
+.back-link-holder {
+    display: flex;
+    gap: 24px;
+}
+
+.back-link {
+    /*border: 1px red solid;*/
+    padding: 0 10px;
+    display: flex;
+    gap: 8px;
+}
+
 .back-link p {
     color: #999999;
     transition: all 0.5s;
+}
+
+.back-icon {
+    width: 16px;
+    transform: translateY(-1px);
 }
 
 .back-link:hover p {color: #e3e3e3;}
