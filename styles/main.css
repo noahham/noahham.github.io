@@ -285,31 +285,38 @@ main.after #name .hero-title {line-height: 12rem;}
 
     .section-head {letter-spacing: 5vw;}
 
-    .link-holder {gap: 3vw;}
-
-    .hero-title {letter-spacing: 13vw;}
+    .link-holder {
+        gap: 0;
+        justify-content: space-between;
+    }
 
     main #name .hero-title {
-        line-height: 4rem;
+        line-height: 3rem;
         transition: all 1s;
     }
 
     .fading-dot {
-        line-height: 1rem;
+        line-height: 0.1rem;
     }
 
 
-    main.after #name .hero-title {line-height: 3rem;}
+    main.after #name .hero-title {line-height: 2rem;}
 
     #name {
         transform:translateX(3px);
         gap: 1rem;
-        width: 65vw;
+        width: calc(45px + 21vw);
+        height: 8rem;
+        min-height: 8rem;
+
+        margin-bottom: calc(95vh - 8rem);
     }
 
     /* Disable hero text animation for mobile */
 
     #name:hover {transform:translateX(3px)}
 
-    #name:hover {width: 50vw;}
+    #name:hover {width: 65vw;}
+
+    #github-link {display: none;}
 }
