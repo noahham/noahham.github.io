@@ -314,9 +314,9 @@ main.after #name .hero-title {line-height: 12rem;}
 
     /* Disable hero text animation for mobile */
 
-    #name:hover {transform:translateX(3px)}
+    #name:hover {transform:translateX(0)}
 
-    #name:hover {width: 65vw;}
+    #name:hover {width: calc(45px + 21vw);}
 
     #github-link {display: none;}
 }
