@@ -88,10 +88,6 @@ h3 {
     transform: translateY(3px);
 }
 
-.empty-div {
-    /*border: 1px yellow solid;*/
-}
-
 @media (max-width: 1300px) {
     main {
         grid-template-columns: 15vw 60vw 15vw;
@@ -124,11 +120,15 @@ h3 {
         margin-top: 2rem;
         margin-left: 0;
         margin-right: 0;
-        /*border: 1px red solid;*/
     }
 
     .empty-div { display: none }
+
     .back-link-holder {
         position: static;
+    }
+
+    .header-holder {
+        flex-direction: column;
     }
 }
