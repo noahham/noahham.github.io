@@ -25,33 +25,33 @@
             <div class="section" id="projects">
                 <div class="card-holder">
                     <div class="row">
-                        <a href="projects/portfolio/" class="card">
-                            <h2 class="card-title">My Portfolio</h2>
-                            <p class="card-description">Hey look, it's this website.</p>
+                        <a href="projects/design-interactive-merch/index.html" class="card">
+                            <h2 class="card-title">DI Merch</h2>
+                            <p class="card-description">A clothing design for designers.</p>
                         </a>
-                        <a href="projects/byte-n-bite" class="card">
-                            <h2 class="card-title">Byte 'n Bite</h2>
-                            <p class="card-description">An AI-powered recipe generator.</p>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="projects/trebbbble/" class="card">
-                            <h2 class="card-title">Trebbbble</h2>
-                            <p class="card-description">A handy website to recognize music from media.</p>
-                        </a>
-                        <a href="projects/wellness-journal/" class="card">
-                            <h2 class="card-title">Wellness Journal</h2>
-                            <p class="card-description">A comprehensive app<br>to keep up mental health.</p>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="projects/duckweb-autofill/" class="card">
+                        <a href="projects/duckweb-autofill/index.html" class="card">
                             <h2 class="card-title">DuckWeb Autofill</h2>
-                            <p class="card-description">A simple extension to autofill your login for UO's DuckWeb.</p>
+                            <p class="card-description">An autofill extension for UO's DuckWeb.</p>
                         </a>
-                        <a href="projects/type-lat/" class="card">
+                    </div>
+                    <div class="row">
+                        <a href="projects/swishscan/index.html" class="card">
+                            <h2 class="card-title">SwishScan</h2>
+                            <p class="card-description">A basketball form improvement app.</p>
+                        </a>
+                        <a href="projects/trebbbble/index.html" class="card">
+                            <h2 class="card-title">Trebbbble</h2>
+                            <p class="card-description">A website for music recognition from video.</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="projects/quackhacks-rebrand/index.html" class="card">
+                            <h2 class="card-title">QH Rebrand</h2>
+                            <p class="card-description">A new identity for a premier hackathon.</p>
+                        </a>
+                        <a href="projects/tui-typing-test/index.html" class="card">
                             <h2 class="card-title">TUI Typing Test</h2>
-                            <p class="card-description">A terminal-based typing test accessible through SSH.</p>
+                            <p class="card-description">An SSH-accessible typing speed test.</p>
                         </a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         <div class="timeline-space"></div>
                         <div class="timeline-text">
                             <h2 class="card-title" style="text-align:right;">Feb 2025 - Sep 2025</h2>
-                            <p class="card-description" style="text-align:right;">Hired as a graphic designer for UO's hackathon, QuackHacks.</p>
+                            <p class="card-description" style="text-align:right;">Hired as a designer for QuackHacks, Oregon's premier hackathon.</p>
                         </div>
                         <div class="timeline-space"></div>
                         <div class="timeline-text">
@@ -72,7 +72,7 @@
                             <p class="card-description" style="text-align:right;">Worked as a store associate at a Five Below retail store.</p>
                         </div>
                     </div>
-                    <div style="margin-top: 10px;">
+                    <div>
                         <div class="timeline-dot"></div>
                         <div class="line"></div>
                         <div class="timeline-dot"></div>
@@ -111,7 +111,6 @@
                 <div class="link-holder">
                     <a href="mailto:noahham25@gmail.com" target="_blank" class="social-link"><p>email</p></a>
                     <a href="https://www.linkedin.com/in/noah-ham/" target="_blank" class="social-link"><p>linkedin</p></a>
-                    <a href="projects/" class="social-link"><p>projects</p></a>
                     <a href="https://www.github.com/noahham/" target="_blank" class="social-link" id="github-link"><p>github</p></a>
                     <a href="resume.pdf" target="_blank" class="social-link"><p>resume</p></a>
                 </div>
@@ -120,5 +119,21 @@
         <script src="scripts/onLoad.js"></script>
         <script src="scripts/heroAnimation.js"></script>
         <script src="scripts/scrollTo.js"></script>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                if (sessionStorage.getItem("scrollToProjects") === "1") {
+                    instantScrollToProjects();
+                    sessionStorage.removeItem("scrollToProjects");
+                }
+            });
+
+            function instantScrollToProjects() {
+                const target = document.getElementById('projects');
+
+                if (target) {
+                    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            }
+        </script>
     </body>
 </html>

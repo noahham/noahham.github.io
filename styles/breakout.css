@@ -1,9 +1,10 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 14vw 42vw 14vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
 
-    margin-top: 4rem;
+    margin-top: calc(8rem + 10px);
     transition: all 0.75s;
 }
 
@@ -16,67 +17,118 @@ main.after .text-holder {
     gap: 16px;
 }
 
-
 h2 {
     color: #e3e3e3;
-    margin:0;
-}
-
-p {
+    font-weight: 500;
     margin: 0;
 }
 
-strong {color: #e3e3e3;}
-
-ul {
-    font-family: "Inter", sans-serif;
-    margin: 0;
+h3 {
+    color: #999;
+    font-family: "Inter", "sans-serif";
+    font-weight: 400;
     font-size: 1rem;
-    color: #e3e3e3;
-}
-
-li {line-height: 1.65rem;}
-
-code {
-    background-color: #2c2c2c;
-    border-radius: 4px;
-    padding: 4px;
-    margin: 0;
-}
-
-.dramatic {margin-top: 1rem;}
-
-.stack {
-    color: #999999;
-    margin-bottom: 3rem;
 }
 
 .text-holder {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    gap: 5rem;
+}
+
+.text-holder p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.text-holder h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.header-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-holder p {
+    margin: 0 0 1rem;
+    color: #999;
 }
 
 .back-link-holder {
-    display: flex;
-    gap: 24px;
+    position: fixed;
+    top: 8rem;
+    left: 15vw;
+    z-index: 10;
 }
 
 .back-link {
-    /*border: 1px red solid;*/
-    padding: 0 10px;
     display: flex;
+    flex-direction: row;
     gap: 8px;
+    padding: 8px;
 }
 
 .back-link p {
+    margin: 0;
     color: #999999;
-    transition: all 0.5s;
+
+    transition: all 0.3s;
+}
+
+.back-link:hover p {
+    color: #e3e3e3;
 }
 
 .back-icon {
-    width: 16px;
-    transform: translateY(-1px);
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
 }
 
-.back-link:hover p {color: #e3e3e3;}
+.empty-div {
+    /*border: 1px yellow solid;*/
+}
+
+@media (max-width: 1300px) {
+    main {
+        grid-template-columns: 15vw 60vw 15vw;
+
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .back-link-holder {
+        left: 5vw;
+    }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+    body {
+        margin-top: 3rem;
+        margin-left: 7vw;
+        margin-right: 7vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        /*border: 1px red solid;*/
+    }
+
+    .empty-div { display: none }
+    .back-link-holder {
+        position: static;
+    }
+}

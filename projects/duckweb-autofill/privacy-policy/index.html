@@ -7,34 +7,85 @@
         <link rel="icon" href="https://noahham.com/media/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
         <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
         <link rel="stylesheet" href="../../../styles/main.css">
-        <link rel="stylesheet" href="../../../styles/breakout.css">
         <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin-top: 4rem;
+                transition: all 0.75s;
+            }
+
+            main .text-holder {
+                gap: 20px;
+                transition: all 1s;
+            }
+
+            main.after .text-holder {
+                gap: 16px;
+            }
+
+            h3 {
+                color: #999;
+                font-family: "Inter", "sans-serif";
+                font-weight: 400;
+                font-size: 1rem;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            strong {color: #e3e3e3;}
+
+            ul {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                font-size: 1rem;
+                color: #e3e3e3;
+            }
+
+            li {line-height: 1.65rem;}
+
+            code {
+                background-color: #2c2c2c;
+                border-radius: 4px;
+                padding: 4px;
+                margin: 0;
+            }
+
+            .text-holder {
+                display: flex;
+                flex-direction: column;
+                margin-top: 5rem;
+            }
+
             main {margin-top: 10rem;}
-            .dramatic {margin-top: 3rem;}
         </style>
     </head>
     <body>
         <main>
             <div class="text-holder" style="margin-top: 0;">
                 <p><strong>DuckWeb Autofill</strong> is a Chrome extension designed to help users quickly log in to the University of Oregon’s DuckWeb portal by securely storing and autofilling their credentials.</p>
-                <h2 class="dramatic">What We Collect</h2>
+                <h3>What We Collect</h3>
                 <p>This extension only collects the following data if you explicitly provide it:</p>
                 <ul>
                     <li>DuckWeb username</li>
                     <li>DuckWeb password</li>
                 </ul>
                 <p>This information is stored securely using Chrome’s <code>storage.sync</code> API, which allows credentials to sync across devices using the same Google account. This data is never transmitted to any external servers.</p>
-                <h2 class="dramatic">How It's Used</h2>
+                <h3>How It's Used</h3>
                 <p>Your credentials are used only to autofill the DuckWeb login form when you visit the site. The extension does not access or interact with any other websites or services.</p>
-                <h2 class="dramatic">Security Practices</h2>
+                <h3>Security Practices</h3>
                 <ul>
                     <li>All data is stored using Chrome’s <code>storage.sync</code>, which encrypts data in transit and at rest.</li>
                     <li>Permissions are restricted to the DuckWeb domain only.</li>
                     <li>No tracking, analytics, or third-party scripts are used.</li>
                 </ul>
-                <h2 class="dramatic">Data Sharing</h2>
+                <h3>Data Sharing</h3>
                 <p>We do not sell, share, or transmit your data to anyone. Ever.</p>
-                <h2 class="dramatic">How to Remove Your Data</h2>
+                <h3>How to Remove Your Data</h3>
                 <p>You can remove your credentials at any time by simply uninstalling the extension. Your data will be deleted automatically.</p>
             </div>
         </main>

@@ -8,128 +8,32 @@
         <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
         <link rel="stylesheet" href="../../styles/main.css">
         <link rel="stylesheet" href="../../styles/breakout.css">
-        <style>
-            /* In-Document styling for song card */
-            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-            #song-card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                background-color: #f0f0f0;
-                width: 75%;
-                height: 30vh;
-                border-radius: 10px;
-
-                margin: 5rem auto;
-                padding: 1rem;
-                transition: all 0.5s;
-            }
-
-            .cover-and-links {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            #cover {
-                width: 140px;
-                height: 140px;
-                border-radius: 5px;
-
-                transition: all 0.5s;
-            }
-
-            #cover:hover {transform: scale(1.03);}
-
-            .music-link-holder {
-                display: flex;
-                margin: 0;
-                gap: 10px;
-            }
-
-            .icon-link {
-                width: 30px;
-                height: 30px;
-                transition: all 0.3s;
-            }
-
-            .icon-link:hover {transform: scale(1.05);}
-
-            .icon {width: 30px;}
-
-            #title {
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 2rem;
-                line-height: 2rem;
-                letter-spacing: -0.05rem;
-
-                color: black;
-                margin: 0.5rem 0 0.5rem;
-            }
-
-            #artist {
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 1rem;
-                line-height: 1.5;
-                font-weight: 500;
-                letter-spacing: -0.01rem;
-
-                color: black;
-                margin: 0;
-            }
-
-            @media (max-width: 748px) {
-                #song-card {width: 100%;}
-
-                #cover {
-                    width: 100px;
-                    height: 100px;
-                }
-
-                .icon {width: 25px;}
-            }
-        </style>
     </head>
     <body>
+        <div class="back-link-holder">
+            <a class="back-link" href="../../index.html" onclick="sessionStorage.setItem('scrollToProjects', '1')">
+                <img src="../../media/back-link.svg" alt="Back Arrow" class="back-icon">
+                <p>home</p>
+            </a>
+        </div>
         <main>
-            <div class="back-link-holder">
-                <a href="https://noahham.com/projects/" class="back-link">
-                    <img src="../../media/arrow-left.svg" alt="Left Arrow" class="back-icon">
-                    <p>projects</p>
-                </a>
-                <a href="https://noahham.com" class="back-link">
-                    <img src="../../media/corner-left-up.svg" alt="Up Arrow" class="back-icon">
-                    <p>home</p>
-                </a>
-            </div>
+            <div class="empty-div"></div>
             <div class="text-holder">
-                <h2>Trebbbble</h2>
-                <p class="stack"><i>HTML, CSS, JavaScript, Python, Flask, ACRCloud</i></p>
-                <p>A website that can recognize music from short-form videos.</p>
-                <p class="dramatic">A common problem that a lot of people have when it comes to watching short-form content stems from one of its main features: The music. </p>
-                <p>With songs becoming more and more viral overnight, it's difficult for those watching short-form content like TikTok, Instagram Reels, or YouTube Shorts to continue listening to the music shown in their videos when the song is only played for 10-15 seconds.</p>
-                <p class="dramatic"><i>This is exactly what Trebbbble was created for.</i></p>
-                <div id="song-card">
-                    <div class="cover-and-links">
-                        <img src="../../media/cover.jpg" alt="Album Cover" id="cover">
-                        <div class="music-link-holder">
-                            <a href="https://open.spotify.com/search/Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="../../media/spotify.svg" alt="Spotify" class="icon"></a>
-                            <a href="https://music.youtube.com/search?q=Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="../../media/yt_music.svg" alt="YouTube Music" class="icon"></a>
-                            <a href="https://music.apple.com/us/search?term=Complexion%20%28A%20Zulu%20Love%29%20Kendrick%20Lamar" target="_blank" class="icon-link"><img src="../../media/apple_music.svg" alt="Apple Music" class="icon"></a>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 id="title">Complexion (A Zulu Love)</h2>
-                        <h3 id="artist">Kendrick Lamar</h3>
-                    </div>
+                <div class="header-holder">
+                    <h2>Trebbbble</h2>
+                    <p>March 2025</p>
                 </div>
-                <p class="dramatic">Using ACRCloud's music recognition API and some relatively simple requests, users can provide a link to whatever short-form content they like and have some music displayed to them.</p>
+
+                <p>A user-friendly website that can recognize music from short-form videos.</p>
+                <p>Short-form content often uses only 10–15 seconds of a song, making it surprisingly difficult for viewers to find the full track afterward. Trebbbble solves this by letting users paste a link to any TikTok, Instagram Reel, or YouTube Short and instantly identify the music in the clip.</p>
+                <p>Using ACRCloud's music recognition API and some relatively simple requests, users can provide a link to whatever short-form content they like and have some music displayed to them.</p>
+
                 <div class="link-holder">
-                    <a href="https://noahham.com/trebbbble/" target="_blank" class="social-link"><p>website</p></a>
-                    <a href="https://github.com/noahham/trebbbble/" target="_blank" class="social-link"><p>github</p></a>
+                    <a href="https://github.com/noahham/trebbbble" target="_blank" class="social-link"><p>interface</p></a>
+                    <a href="https://github.com/noahham/trebbbble-backend" target="_blank" class="social-link"><p>backend</p></a>
                 </div>
             </div>
+            <div class="empty-div"></div>
         </main>
         <script src="../../scripts/onLoad.js"></script>
     </body>
