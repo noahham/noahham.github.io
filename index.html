@@ -120,20 +120,14 @@
         <script src="scripts/heroAnimation.js"></script>
         <script src="scripts/scrollTo.js"></script>
         <script>
+            // Auto-scrolls to projects section if coming from a projects page.
             window.addEventListener("DOMContentLoaded", () => {
                 if (sessionStorage.getItem("scrollToProjects") === "1") {
-                    instantScrollToProjects();
+                    const target = document.getElementById('projects');
+                    if (target) { target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
                     sessionStorage.removeItem("scrollToProjects");
                 }
             });
-
-            function instantScrollToProjects() {
-                const target = document.getElementById('projects');
-
-                if (target) {
-                    target.scrollIntoView({ behavior: 'instant', block: 'start' });
-                }
-            }
         </script>
     </body>
 </html>

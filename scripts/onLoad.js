@@ -1,4 +1,4 @@
-// Adds the "after" class to main
+// Adds the "after" class to main section
 window.addEventListener("load", () => {
     document.querySelector("main").classList.add("after");
 
