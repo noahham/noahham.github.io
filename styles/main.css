@@ -210,6 +210,7 @@ main.after #name .hero-title {line-height: 12rem;}
 .card-title {
     margin-top: 0;
     color: #e3e3e3;
+    font-weight: 500;
     padding-bottom: 0.25rem;
     transition: all 0.3s;
 }
