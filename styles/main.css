@@ -156,7 +156,6 @@ main.after #name .hero-title {line-height: 12rem;}
 
 .timeline-block {
     width: 12rem;
-    /*margin-top: 5px;*/
 }
 
 .timeline-text {
@@ -184,7 +183,7 @@ main.after #name .hero-title {line-height: 12rem;}
 .card-holder {
     display: flex;
     flex-wrap: nowrap;
-    gap: 18px;
+    gap: 32px;
     overflow-x: auto;
     scrollbar-width: none;
 }
@@ -225,7 +224,7 @@ main.after #name .hero-title {line-height: 12rem;}
 
 .link-holder {
     display: flex;
-    gap: 32px;
+    gap: 3rem;
 
     margin-top: 2rem;
 }
@@ -289,8 +288,7 @@ main.after #name .hero-title {line-height: 12rem;}
     .section-head {letter-spacing: 5vw;}
 
     .link-holder {
-        gap: 0;
-        justify-content: space-between;
+        gap: 2rem;
     }
 
     main #name .hero-title {
