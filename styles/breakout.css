@@ -96,7 +96,7 @@ h3 {
     transform: translateY(3px);
 }
 
-.tall-image-holder {
+.item-holder {
     display: flex;
     justify-content: center;
     align-items: center;
