@@ -32,7 +32,7 @@ h3 {
 
 .display-img {
     max-width: calc(42vw - 8rem);
-    max-height: calc(24vw);
+    max-height: 400px;
     margin-top: 4rem;
     margin-bottom: 4rem;
     border-radius: 10px;
@@ -153,9 +153,10 @@ h3 {
     }
 
     .display-img {
-        max-width: calc(60vw - 8rem);
-        max-height: calc(24vh);
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        max-width: calc(86vw - 8rem);
+        /*margin-top: 2rem;*/
+        /*margin-bottom: 2rem;*/
     }
+
+
 }
