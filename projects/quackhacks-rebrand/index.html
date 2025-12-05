@@ -8,6 +8,53 @@
         <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
         <link rel="stylesheet" href="../../styles/main.css">
         <link rel="stylesheet" href="../../styles/breakout.css">
+        <style>
+            .color-holder {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+
+            .color-card {
+                width: 92px;
+                height: 92px;
+                border-radius: 10px;
+            }
+            
+            @media (max-width: 1000px) {
+                .color-card {
+                    width: 86px;
+                    height: 86px;
+                    border-radius: 10px;
+                }
+            }
+
+            @media (max-width: 950px) {
+                .color-card {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 10px;
+                }
+            }
+
+            @media (max-width: 800px) and (orientation: portrait) {
+                .color-holder {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-top: 4rem;
+                    margin-bottom: 4rem;
+                }
+
+                .color-card {
+                    width: 40vw;
+                    height: 64px;
+                    border-radius: 10px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="back-link-holder">
@@ -27,11 +74,34 @@
                 <p>Create a logo and color scheme that align with both Oregon’s natural environment and the technological identity of hackathons and the University of Oregon.</p>
 
                 <h3>Initial Direction & Feedback</h3>
-                <p>Being part of a larger team that tackled the rebrand, I was primarily responsible for a new color scheme. Knowing the logo would likely be technology-based, I wanted the color scheme to look like Oregon. After looking around on and off campus and taking photos of UO and its surrounding area, I ran the images through a Python algorithm that I wrote to output samples of their most common hues.</p>
+                <p>Being part of a larger team that tackled the rebrand, I was primarily responsible for a new color scheme. Knowing the logo would likely be technology-based, I wanted the color scheme to look like Oregon.</p>
+                <p>After looking around on and off campus and taking photos of UO and its surrounding area, I ran the images through a Python algorithm that I wrote to output samples of their most common hues.</p>
+
+                <div class="item-holder">
+                    <div class="color-holder">
+                        <div class="color-card" style="background-color: #061910;"></div>
+                        <div class="color-card" style="background-color: #57675f;"></div>
+                        <div class="color-card" style="background-color: #747e7f;"></div>
+                        <div class="color-card" style="background-color: #4a4541;"></div>
+                        <div class="color-card" style="background-color: #e2e8e8;"></div>
+                    </div>
+                </div>
+
                 <p>Our creative director appreciated the approach but suggested opting for a more unified color scheme rather than direct samples.</p>
 
                 <h3>Final Product</h3>
                 <p>By taking inspiration from the samples, we constructed a unified palette that was much more balanced than the raw originals. The new color scheme quickly became a pivotal part of the rebrand and grounded the organization to its Oregonian roots.</p>
+
+                <div class="item-holder">
+                    <div class="color-holder">
+                        <div class="color-card" style="background-color: #000000;"></div>
+                        <div class="color-card" style="background-color: #20341e;"></div>
+                        <div class="color-card" style="background-color: #396c3c;"></div>
+                        <div class="color-card" style="background-color: #d8ebe7;"></div>
+                        <div class="color-card" style="background-color: #ffffff;"></div>
+                    </div>
+                </div>
+
                 <div class="link-holder">
                     <a href="https://quackhacks.org/" target="_blank" class="social-link"><p>webpage</p></a>
                     <a href="https://www.linkedin.com/company/quackhacks" target="_blank" class="social-link"><p>linkedin</p></a>
