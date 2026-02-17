@@ -73,6 +73,40 @@ p {
 
 main.after {opacity: 1;}
 
+/* SCROLLBAR */
+/* 1. Standard property for Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* 2. Webkit (Chrome/Safari/Edge) styling */
+::-webkit-scrollbar {
+    width: 8px; /* Thinner width */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Makes the track invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle scrollbar color */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Creates padding effect */
+    background-clip: content-box;
+}
+
+/* 3. The "Auto-Hide" Effect */
+/* Note: True "auto-hide" is a browser-level setting,
+   but we can make it fade in only when you hover over the page */
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+html:hover ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* NAVBAR */
 
 .header {
