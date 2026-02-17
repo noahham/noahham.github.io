@@ -82,8 +82,6 @@ h3 {
 .back-link p {
     margin: 0;
     color: #999999;
-
-    transition: all 0.3s;
 }
 
 .back-link:hover p {
@@ -101,7 +99,7 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: #1e1e1e;
-    border: 2px #2c2c2c solid;
+    border: 1px #2c2c2c solid;
     border-radius: 10px;
 
     margin-top: 1rem;
