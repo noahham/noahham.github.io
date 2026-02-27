@@ -68,37 +68,35 @@ p {
 }
 
 /* SCROLLBAR */
-/* 1. Standard property for Firefox */
+/* Firefox */
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    scrollbar-color: #2f2f2f transparent;
 }
 
-/* 2. Webkit (Chrome/Safari/Edge) styling */
+/* Chrome/Safari/Edge */
 ::-webkit-scrollbar {
     width: 8px; /* Thinner width */
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent; /* Makes the track invisible */
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); /* Subtle scrollbar color */
+    background-color: #2f2f2f;
     border-radius: 10px;
-    border: 2px solid transparent; /* Creates padding effect */
+    border: 2px solid transparent;
     background-clip: content-box;
 }
 
-/* 3. The "Auto-Hide" Effect */
-/* Note: True "auto-hide" is a browser-level setting,
-   but we can make it fade in only when you hover over the page */
+
 ::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
 html:hover ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #2f2f2f;
 }
 
 /* NAVBAR */
@@ -181,7 +179,7 @@ html:hover ::-webkit-scrollbar-thumb {
     align-items: center;
     gap: 0.5rem;
 
-    margin-bottom: 50vh;
+    margin-bottom: 25vh;
 }
 
 .hero-title {
@@ -261,13 +259,10 @@ html:hover ::-webkit-scrollbar-thumb {
 .row {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    height: 400px;
+    gap: 80px;
     width: calc((42vw - 40px) / 3); /* 100vw - margins - gaps / 3 */
     min-width: 175px;
-}
-
-.card {
-    height: 200px;
 }
 
 .card:hover .card-description {
