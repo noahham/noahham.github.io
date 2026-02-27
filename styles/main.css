@@ -21,7 +21,6 @@ body {
 main {
     margin: calc(50vh - 3.25rem) 29vw 20vh;
 
-    opacity: 0;
     transition: all 0.75s;
     transform: translateX(8px);
 }
@@ -67,11 +66,6 @@ p {
 
     padding-top: 148px;
 }
-
-
-/* On-Load Effects */
-
-main.after {opacity: 1;}
 
 /* SCROLLBAR */
 /* 1. Standard property for Firefox */

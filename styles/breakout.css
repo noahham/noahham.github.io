@@ -9,12 +9,8 @@ main {
 }
 
 main .text-holder {
-    gap: 20px;
-    transition: all 1s;
-}
-
-main.after .text-holder {
     gap: 16px;
+    transition: all 1s;
 }
 
 h2 {
