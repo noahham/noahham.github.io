@@ -286,9 +286,7 @@ html:hover ::-webkit-scrollbar-thumb {
 
 .link-holder {
     display: flex;
-    gap: 3rem;
-
-    margin-top: 2rem;
+    gap: 2rem;
 }
 
 .social-link p {
@@ -296,6 +294,13 @@ html:hover ::-webkit-scrollbar-thumb {
 }
 
 .social-link:hover p {color: #e3e3e3;}
+
+.horizontal-line {
+    width: 100%;
+    background-color: #2c2c2c;
+    height: 1px;
+    margin-top: 1rem;
+}
 
 
 /* Laptop */
@@ -333,8 +338,6 @@ html:hover ::-webkit-scrollbar-thumb {
     .link-holder {
         gap: 2rem;
     }
-
-
 
     main.after #name .hero-title {line-height: 2rem;}
 

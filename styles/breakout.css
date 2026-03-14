@@ -146,11 +146,7 @@ h3 {
         flex-direction: column;
     }
 
-    .display-img {
-        max-width: calc(86vw - 8rem);
-        /*margin-top: 2rem;*/
-        /*margin-bottom: 2rem;*/
-    }
+    .display-img {max-width: calc(86vw - 8rem);}
 
 
 }
