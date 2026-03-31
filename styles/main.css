@@ -135,11 +135,9 @@ html:hover ::-webkit-scrollbar-thumb {
     padding: 4px;
     transform: rotate(0deg);
     transform-origin: 20px 20px 20px;
-    /* KEYFRAME ME TWIN */
-
 }
 
-.logo-link:hover {
+.logo-link:hover img {
     animation: instant-snap 0.2s steps(1) forwards;
 }
 
@@ -154,18 +152,20 @@ html:hover ::-webkit-scrollbar-thumb {
     line-height: 1;
 }
 
-.hire-holder {
-    display: flex;
+button {
     background: #1e1e1e;
     border: 1px #2c2c2c solid;
     border-radius: 8px;
     margin: 0;
     padding: 0 16px;
-    justify-content: center;
-    align-items: center;
+    font-family: "Inter", "sans-serif";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #e3e3e3;
 }
 
-.hire-holder:hover {
+button:hover {
+    background: #232323;
     cursor: pointer;
 }
 

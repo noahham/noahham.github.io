@@ -9,14 +9,13 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body class="hidden-scrollbar">
-    <div class="header">
-        <a href="http://noahham.com" class="logo-link"><img class="logo" src="media/favicon-dark.png" alt="logo"></a>
-        <div class="navbar-space"></div>
-<!--        <div class="hire-holder"><h2 class="hire-button">Contact</h2></div>-->
-
-    </div>
+        <!-- NAVBAR -->
+        <div class="header">
+            <a href="https://noahham.com" class="logo-link"><img class="logo" src="media/favicon-dark.png" alt="logo"></a>
+            <div class="navbar-space"></div>
+            <button id="contact">Contact</button>
+        </div>
         <main>
-
             <!-- HERO SCREEN -->
             <div class="hero-holder">
                 <h1 class="hero-title">NOAH HAM</h1>
@@ -120,16 +119,55 @@
                 </div>
             </div>
         </main>
-        <script src="scripts/onLoad.js"></script>
-        <script src="scripts/heroAnimation.js"></script>
-        <script src="scripts/scrollTo.js"></script>
         <script>
+            // Smoothly scrolls to a given section
+            function smoothScrollTo(targetY, duration = 1000) { // duration in milliseconds
+                const startY = window.scrollY;
+
+                const mediaQuery = window.matchMedia("(max-width: 800px) and (orientation: portrait)");
+                const offset = mediaQuery.matches ? -140 : -200; // Apply offset only for the media query
+
+                const distance = targetY - startY - offset;
+                let startTime = null;
+
+                function animationStep(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / duration, 1); // Normalize progress (0 to 1)
+
+                    const easeInOutQuad = progress < 0.5
+                        ? 2 * progress * progress
+                        : 1 - Math.pow(-2 * progress + 2, 2) / 2; // Ease-in-out function
+
+                    window.scrollTo(0, startY + distance * easeInOutQuad);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animationStep);
+                    }
+                }
+                requestAnimationFrame(animationStep);
+            }
+
             // Auto-scrolls to projects section if coming from a projects page.
             window.addEventListener("DOMContentLoaded", () => {
                 if (sessionStorage.getItem("scrollToProjects") === "1") {
                     const target = document.getElementById('projects');
                     if (target) { target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
                     sessionStorage.removeItem("scrollToProjects");
+                }
+            });
+
+            // Auto-scrolls to about section if clicked on contact button.
+            document.querySelector('#contact').addEventListener('click', function () {
+                const aboutSection = document.querySelector('#about');
+                if (aboutSection) smoothScrollTo(aboutSection.offsetTop + 125);
+            });
+
+            // Same as ^^^ but it's part 2.
+            window.addEventListener('DOMContentLoaded', () => {
+                if (sessionStorage.getItem('scrollToAbout') === '1') {
+                    const target = document.getElementById('about');
+                    if (target) { target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
+                    sessionStorage.removeItem('scrollToAbout');
                 }
             });
         </script>
