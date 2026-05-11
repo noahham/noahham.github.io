@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Design Interactive Merch</title>
+        <link rel="icon" href="https://noahham.com/media/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="../../styles/main.css">
+        <link rel="stylesheet" href="../../styles/breakout.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="https://noahham.com" class="logo-link"><img class="logo" src="../../media/favicon-dark.png" alt="logo"></a>
+            <div class="navbar-space"></div>
+            <button id="contact">Contact</button>
+        </div>
+        <div class="back-link-holder">
+            <a class="back-link" href="https://noahham.com/" onclick="sessionStorage.setItem('scrollToProjects', '1')">
+                <img src="../../media/back-link.svg" alt="Back Arrow" class="back-icon">
+                <p>home</p>
+            </a>
+        </div>
+        <main>
+            <div></div>
+            <div class="text-holder">
+                <div class="header-holder">
+                    <h2>Design Interactive Merch</h2>
+                    <p>April 2026</p>
+                </div>
+
+                <h3>Goal & Constraints</h3>
+                <p>Reliable Residence is a startup housing platform that aims to help traveling workers quickly find affordable housing in an unfamiliar area. Our team only had six weeks to make extensive user-flow improvements to three critical pages of the existing website. We needed to both accelerate a user’s journey through the site to find housing as quickly as possible while also building and maintaining their trust in the service.</p>
+
+                <h3>Initial Direction</h3>
+                <p>As part of a larger design team that was revamping the major pages of the site, I worked on the property searching page.</p>
+
+                <div class="item-holder"><img class="display-img" src="original-design.webp" alt="Original Design"></div>
+
+                <p>After analyzing this page with the rest of my team, we identified the major issues with the poorly displayed information. In the cards, the price doesn’t immediately stand out, it says “Prices include all fees” for every single property. For how large the cards were, the space isn’t well utilized. This all prevents the user from quickly browsing properties. They have to decipher what information is actually important and what is just taking up space.</p>
+                <p>Additionally, some important information just isn’t there. When you click into a property, you can see more in-depth information about the host, the property’s location, and the amenities that the property includes. In the search page, you don’t see any of that. This costs the user an extra click and having to constantly load into a different page just to see basic information.</p>
+                <p>Looking through similar services and how they displayed information, we took inspiration from Airbnb, Transplant, and Placemakr. For each of them, we noticed that they used a lot less space to include the same information. They also have some sort of map to visualize where the properties actually are. Using the features we liked from our inspo websites, we developed several low-fidelity prototypes for each page.</p>
+
+                <div class="item-holder"><img class="display-img" src="low-fidelity-design.webp" alt="Low-Fidelity Design"></div>
+
+                <p>From then, we moved on to consolidating the various low-fidelity designs into one high-fidelity prototype. The most prominent changes to the search page were the addition of a large map and a simplified search bar. The map displayed a property’s price and location, and the new search bar included all the parameters from the old version into a one-line, intuitive design.</p>
+
+                <div class="item-holder"><img class="display-img" src="high-fidelity-design.webp" alt="High-Fidelity Design"></div>
+
+                <p>Through user-testing, we found that the addition of a map and new search bar greatly decreased the time to find a property. Users quickly figured out how the new search bar functioned without any assistance and could locate properties on the map with ease.</p>
+
+
+
+                <h3>Feedback</h3>
+                <p>As a team, we met together to discuss a consistent look across our three pages. We came up with a uniform color scheme, icon style, and typography to make each page feel like a part of the same system.</p>
+                <p>Finally, we had a meeting with the startup founder to get her opinion on our updates. She loved our new map, and together we developed the idea of including a searched workplace to display how close each property is from where the user would be working.</p>
+
+                <h3>Final Outcome</h3>
+                <p>In addition to the new map and search bar, we also updated the cards to have two different views. Users who want a quick overview can use the grid view to scan key details like price, bed/bath count, and host info. Those who want more context before clicking in can switch to the row view, which adds a larger image, a short description, and highlighted amenities, which lets them make a more informed decision without leaving the page.</p>
+                <p>After the team discussion and founder feedback, we added a lot more color to our designs and showcased the feature of showing a workplace amongst the actual properties.</p>
+
+                <div class="item-holder"><img class="display-img" src="final-design.webp" alt="Final Design"></div>
+
+                <p>The user’s journey through the page has been greatly shortened and simplified; they can see much more information about the property without having to click into a new page. Users can now also compare prices and locations relative to their workplace from the map, which saves them from having to contact the host about commute times. As for building trust, we added more information about the host. By using a new rating system, users can get an idea of how trustworthy the person they’re renting from actually is.</p>
+
+                <div class="horizontal-line"></div>
+                <div class="link-holder">
+                    <a href="https://reliableresidence.com/" target="_blank" class="social-link"><p>website</p></a>
+                    <a href="presentation.pdf" target="_blank" class="social-link"><p>presentation</p></a>
+                </div>
+            </div>
+        </main>
+        <script src="../../scripts/scrollTo.js"></script>
+    </body>
+</html>
