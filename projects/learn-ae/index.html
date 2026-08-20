@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LearnAE</title>
+        <link rel="icon" href="https://noahham.com/media/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="https://noahham.com/media/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="../../styles/main.css">
+        <link rel="stylesheet" href="../../styles/breakout.css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="https://noahham.com" class="logo-link"><img class="logo" src="../../media/favicon-dark.png" alt="logo"></a>
+            <div class="navbar-space"></div>
+            <button id="contact">Contact</button>
+        </div>
+        <div class="back-link-holder">
+            <a class="back-link" href="https://noahham.com/" onclick="sessionStorage.setItem('scrollToProjects', '1')">
+                <img src="../../media/back-link.svg" alt="Back Arrow" class="back-icon">
+                <p>home</p>
+            </a>
+        </div>
+        <main>
+            <div></div>
+            <div class="text-holder">
+                <div class="header-holder">
+                    <h2>LearnAE</h2>
+                    <p>Aug 2026</p>
+                </div>
+                <h3>Goal & Constraints</h3>
+                <p>Adobe After Effects (AE) is 2D motion graphics and VFX compositing software. It’s also really difficult to learn. I wanted to build an interactive website that would give new learners some ground to stand on when starting their After Effects journey.</p>
+                <p>The problem with After Effects is its complexity. I can’t assume my users have any prior experience with After Effects or even with 2D creative software.</p>
+
+                <h3>Initial Direction</h3>
+                <p>The original idea for the site was to teach with a deep understanding. It’s easier and more interesting for some people to learn when they’re taught the concept from top to bottom. I would go through abstract ideas like Blending Modes, which to many seem like fancy names that make funny-looking filters, as intricate explanations of the math behind those filters. <i>Math can be fun too</i>, I thought.</p>
+                <p>I posted on different AE forums about my idea, really just to see if it was something that people had a need for. From the comments on Reddit and Creative Cow, people definitely thought it was an interesting concept, but some were confused on who exactly the platform would be for. If I planned on having users with the absolute bare minimum experience of using a file-folder system on their computers, my programming-level explanations of algorithms would be meaningless and boring to them.</p>
+
+                <h3>New Direction</h3>
+                <p>With the help of those comments, I came up with a new plan. Still teaching After Effects to brand new users, but adapting from the current system of learning. From my experience, you can finish an introductory video after two hours and realize you still know nothing. After Effects is an incredibly powerful tool that requires hands-on learning. All I have to do is sandbox it.</p>
+                <div class="item-holder"><img class="display-img" src="low-fi.png" alt="Low-Fi Wireframe"></div>
+                <p>I decided on a fairly linear website so that users weren't responsible for deciding what to learn next. Each skill would introduce a concept that became useful later in the course. The concepts (apart from the intro and ending) would include a written guide about how it works alongside a downloadable After Effects project file with a hands-on task inside.</p>
+
+                <h3>Feedback</h3>
+                <p>I handed off an early version of the site to a few of my friends to navigate without any assistance. They found the interface itself quite intuitive but had a couple issues when it came to the actual content.</p>
+                <p>There was a lot of unbroken text. I’d done my best to split ideas into different paragraphs, but if you open a site that teaches creative software, your introduction to the platform shouldn’t be a wall of text. The curse of knowledge was another issue. There are so many tiny details that come natural to me as an AE user for the last few years but are foreign to someone brand new. I was unintentionally writing for someone who already understood the concepts.</p>
+                <p>I had also spent a lot of my time experimenting with Lottie animations. I originally only intended to use animations for the interactive parts of the website, but getting a bit carried away, I also spent time animating icons, buttons, and intro graphics. I’m proud of the way the website looks with these animations, but testing showed that users largely ignored them and that they weren't contributing to the learning process. I had to separate motion that made the interface more engaging from motion that actually helped communicate an idea.</p>
+
+                <h3>Final Product</h3>
+                <div class="item-holder">
+                    <img class="display-img" src="homepage.png" alt="Homepage">
+                    <img class="display-img" src="link-and-hotkeys.png" alt="Link and Hotkeys">
+                    <img class="display-img" src="easing-demo.png" alt="Easing Demo">
+                    <img class="display-img" src="buttons.png" alt="Buttons">
+                </div>
+                <p>From the user testing, I reviewed the website copy for the knowledge gap inconsistencies. I added more images to better describe the concepts from the text (with the added effect of breaking up text). This included things like screenshots of where menu settings can be found and screenshots of icons instead of long descriptions of what the icons looked like. The animations were also adjusted to be a bit less flashy. Here’s some before and after comparisons:</p>
+                <div class="item-holder">
+                    <img class="display-img" src="fix1-before.png" alt="Fix 1 Before">
+                    <img class="display-img" src="fix1-after.png" alt="Fix 1 After">
+                </div>
+                <div class="item-holder">
+                    <img class="display-img" src="fix2-before.png" alt="Fix 2 Before">
+                    <img class="display-img" src="fix2-after.png" alt="Fix 2 After">
+                </div>
+                <p>In terms of the actual tools used, this is the obligatory rundown. The wireframes and hi-fi designs were built in Figma, then translated to React with Figma’s Builder.io plugin. Most components were effectively rebuilt to account for mobile resizing. Every complex animation was made in After Effects, then exported to Lottie files through Bodymovin. Once everything was built, a GitHub Action built and deployed the Vite project.</p>
+                <p>One of the biggest lessons that I got from this project was that teaching a complex tool isn't about explaining every tiny nuance. It's about giving beginners the right to information to allow experimenting with it themselves. They shall do what thou wilt.</p>
+
+                <div class="horizontal-line"></div>
+                <div class="link-holder">
+                    <a href="https://noahham.com/learn-ae/" target="_blank" class="social-link"><p>webpage</p></a>
+                </div>
+            </div>
+        </main>
+        <script src="../../scripts/scrollTo.js"></script>
+    </body>
+</html>

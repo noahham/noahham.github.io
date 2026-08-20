@@ -20,8 +20,6 @@ body {
 
 main {
     margin: calc(50vh - 3.25rem) 29vw 20vh;
-
-    transition: all 0.75s;
     transform: translateX(8px);
 }
 
