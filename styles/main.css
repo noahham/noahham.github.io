@@ -340,8 +340,10 @@ button:hover {
     main.after #name .hero-title {line-height: 2rem;}
 
     .hero-title {
-        font-size: 4rem;
-        letter-spacing: -0.3rem;
+        font-size: 6rem;
+        text-align: center;
+        line-height: 110%;
+        letter-spacing: -0.5rem;
     }
 
     #github-link {display: none;}
